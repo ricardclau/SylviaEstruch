@@ -2,6 +2,9 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
 
+parameters:
+  locales: [ca, es, en]
+
 framework:
     #esi:             ~
     translator:      { fallback: %locale% }
@@ -57,3 +60,12 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
     spool:     { type: memory }
+
+jms_i18n_routing:
+    default_locale: %locale%
+    locales: %locales%
+    strategy: prefix
+
+twig:
+    globals:
+      locales: %locales%
