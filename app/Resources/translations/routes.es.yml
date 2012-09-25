@@ -1,5 +1,9 @@
+# Desc: /biography
+biography: /biografía   # FIXME
+
 # Desc: /contact
 contact: /contacto
+contact_send: /contacto
 
 # Desc: /
-homepage: /   # FIXME
+homepage: /
