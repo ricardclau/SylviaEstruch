@@ -1,41 +1,32 @@
-common:
-  meta:
-    description: Sylvia Estruch - Plastic artist, Theater director, furniture and art restorer, objects and spaces designer
-    keywords: Sylvia Estruch, Artist, Theater, art, furniture, design
-  header:
-    description1: Plastic artist, Theater director, furniture
-    description2: and art restorer, objects and spaces designer
-  secciones:
-    biografia: Biography
-    pintura: Painting
-    restauracion: Restoration
-    teatro: Theater
-    diseño: Design
-    contacto: Contact
-    # -- Subcategorías pintura
-    realista: Realistic
-    transicion: Transition
-    impresionista: Impressionist
-    post-impresionista: Post-Impressionist
-    creacion: Creation
-    ultimascreaciones: Latest creations
-    # -- Subcategorías teatro
-    obrasteatro: Theater plays
-    performances: Performances
-
-contacto:
-  estudio: Studios at Vilanova i la Geltrú (Barcelona) and Xerta (Tortosa, Tarragona)
-  contactar: You can contact me by e-mail
-  nombre: Name and surname
-  email: E-mail
-  mensaje: Message
-  enviar: Send
-  mailok: Message sent ok
-  
-frasesjs:
-  name_err: Name / surname cannot be blank
-  mail_err1: E-mail cannot be blank
-  mail_err2: E-mail must be valid
-  text_err: Message cannot be blank
-  msg_ok: Message sent correctly
-  msg_err: Error sending message  
+contacto.nombre: 'Name and surname'
+contacto.email: E-mail
+contacto.mensaje: Message
+contacto.enviar: Send
+contacto.estudio: 'Studios at Vilanova i la Geltrú (Barcelona) and Xerta (Tortosa, Tarragona)'
+contacto.contactar: 'You can contact me by e-mail'
+frasesjs.name_err: 'Name / surname cannot be blank'
+frasesjs.mail_err1: 'E-mail cannot be blank'
+frasesjs.mail_err2: 'E-mail must be valid'
+frasesjs.text_err: 'Message cannot be blank'
+'frasesjs.msg_ok ': '__frasesjs.msg_ok '
+frasesjs.msg_err: 'Error sending message'
+common.header.description1: 'Plastic artist, Theater director, furniture'
+common.header.description2: 'and art restorer, objects and spaces designer'
+common.secciones.biografia: Biography
+common.secciones.contacto: Contact
+common.meta.description: 'Sylvia Estruch - Plastic artist, Theater director, furniture and art restorer, objects and spaces designer'
+common.meta.keywords: 'Sylvia Estruch, Artist, Theater, art, furniture, design'
+common.secciones.pintura: Painting
+common.secciones.teatro: Theater
+common.secciones.restauracion: Restoration
+common.secciones.diseño: Design
+common.secciones.realista: Realistic
+common.secciones.transicion: Transition
+common.secciones.impresionista: Impressionist
+common.secciones.post-impresionista: Post-Impressionist
+common.secciones.creacion: Creation
+common.secciones.ultimascreaciones: 'Latest creations'
+common.secciones.obrasteatro: 'Theater plays'
+common.secciones.performances: Performances
+contacto.mailok: 'Message sent ok'
+frasesjs.msg_ok: 'Message sent correctly'

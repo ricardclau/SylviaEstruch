@@ -1,41 +1,32 @@
-common:
-  meta:
-    description: Sylvia Estruch - Artista plàstica, Directora de teatre, Resturadora de mobiliari i art, Dissenyadora d'objectes i espais
-    keywords: Sylvia Estruch, Artista, Teatre, art, mobiliari, disseny
-  header:
-    description1: Artista plàstica, Directora de teatre, Resturadora de mobiliari
-    description2: i art, Dissenyadora d'objectes i espais
-  secciones:
-    biografia: Biografia
-    pintura: Pintura
-    restauracion: Restauració
-    teatro: Teatre
-    diseño: Disseny
-    contacto: Contacte
-    # -- Subcategorías pintura
-    realista: Realista
-    transicion: Transició
-    impresionista: Impressionista
-    post-impresionista: Post-Impressionista
-    creacion: Creació
-    ultimascreaciones: Últimas creaciones
-    # -- Subcategorías teatro
-    obrasteatro: Obres de teatre
-    performances: Performances
-
-contacto:
-  estudio: Estudis a Vilanova i la Geltrú (Barcelona) i Xerta (Tortosa, Tarragona)
-  contactar: Pots contactar amb mi per e-mail
-  nombre: Nom i cognoms
-  email: E-mail
-  mensaje: Missatge
-  enviar: Enviar
-  mailok: Missatge enviat correctament
-
-frasesjs:
-  name_err: Nom / cognoms no pot ser blanc
-  mail_err1: E-mail no pot ser blanc
-  mail_err2: E-mail ha de ser vàlid
-  text_err: Missatge no pot ser blanc
-  msg_ok: Missatge enviat correctament
-  msg_err: Error enviant missatge
+contacto.nombre: 'Nom i cognoms'
+contacto.email: E-mail
+contacto.mensaje: Missatge
+contacto.enviar: Enviar
+contacto.estudio: 'Estudis a Vilanova i la Geltrú (Barcelona) i Xerta (Tortosa, Tarragona)'
+contacto.contactar: 'Pots contactar amb mi per e-mail'
+frasesjs.name_err: 'Nom / cognoms no pot ser blanc'
+frasesjs.mail_err1: 'E-mail no pot ser blanc'
+frasesjs.mail_err2: 'E-mail ha de ser vàlid'
+frasesjs.text_err: 'Missatge no pot ser blanc'
+'frasesjs.msg_ok ': '__frasesjs.msg_ok '
+frasesjs.msg_err: 'Error enviant missatge'
+common.header.description1: 'Artista plàstica, Directora de teatre, Resturadora de mobiliari'
+common.header.description2: 'i art, Dissenyadora d''objectes i espais'
+common.secciones.biografia: Biografia
+common.secciones.contacto: Contacte
+common.meta.description: 'Sylvia Estruch - Artista plàstica, Directora de teatre, Resturadora de mobiliari i art, Dissenyadora d''objectes i espais'
+common.meta.keywords: 'Sylvia Estruch, Artista, Teatre, art, mobiliari, disseny'
+common.secciones.pintura: Pintura
+common.secciones.teatro: Teatre
+common.secciones.restauracion: Restauració
+common.secciones.diseño: Disseny
+common.secciones.realista: Realista
+common.secciones.transicion: Transició
+common.secciones.impresionista: Impressionista
+common.secciones.post-impresionista: Post-Impressionista
+common.secciones.creacion: Creació
+common.secciones.ultimascreaciones: 'Últimas creaciones'
+common.secciones.obrasteatro: 'Obres de teatre'
+common.secciones.performances: Performances
+contacto.mailok: 'Missatge enviat correctament'
+frasesjs.msg_ok: 'Missatge enviat correctament'
