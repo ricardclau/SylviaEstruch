@@ -5,5 +5,8 @@ biography: /biografía   # FIXME
 contact: /contacto
 contact_send: /contacto
 
+# Desc: /painting
+painting: /pintura
+
 # Desc: /
 homepage: /

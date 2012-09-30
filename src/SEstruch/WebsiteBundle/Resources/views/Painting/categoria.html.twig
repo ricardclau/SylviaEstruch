@@ -1,0 +1,14 @@
+{% extends 'SEstruchWebsiteBundle::layout.html.twig' %}
+
+{% block subsections %}
+    {{ app.request.get('locale') }}
+<ul class="subsections clearfix">
+    {% for cat in cats %}
+        <li><a href="/{{ app.request.locale }}/{{ 'common.secciones.pintura' | trans | lower }}/{{ cat.id }}/{{ attribute(cat, ['title', app.session.get('locale')] | join('_')) | slug }}">{{ attribute(cat, 'title' ~ app.request.locale | title) }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
