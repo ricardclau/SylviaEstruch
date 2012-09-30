@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Cache;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Validator\Constraints;
@@ -28,6 +29,17 @@ class DefaultController extends Controller
      * @Method("GET")
      */
     public function contactAction()
+    {
+        return array();
+    }
+
+    /**
+     * @Route("/frasesjs", name="frasesjs", defaults={"_format"="js"})
+     * @Template()
+     * @Method("GET")
+     * @Cache(smaxage="600", maxage="600")
+     */
+    public function frasesJsAction()
     {
         return array();
     }
@@ -60,7 +72,7 @@ class DefaultController extends Controller
         } else {
             $jsonerr = array();
             foreach ($errors as $error) {
-                $jsonerr[$error->getPropertyPath()][] = $app['translator']->trans($error->getMessage(), array(), 'validators');
+                $jsonerr[$error->getPropertyPath()][] = $this->get('translator')->trans($error->getMessage(), array(), 'validators');
             }
             
             return new Response(json_encode(array('msg' => 'ERROR', 'errors' => $jsonerr), 400));
