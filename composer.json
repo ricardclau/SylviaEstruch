@@ -6,22 +6,30 @@
     },
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": "2.1.*",
-        "doctrine/orm": ">=2.2.3,<2.4-dev",
-        "doctrine/doctrine-bundle": "1.0.*",
-        "twig/extensions": "1.0.*",
-        "symfony/assetic-bundle": "2.1.*",
-        "symfony/swiftmailer-bundle": "2.1.*",
-        "symfony/monolog-bundle": "2.1.*",
-        "sensio/distribution-bundle": "2.1.*",
-        "sensio/framework-extra-bundle": "2.1.*",
-        "sensio/generator-bundle": "2.1.*",
-        "jms/security-extra-bundle": "1.2.*",
-        "jms/di-extra-bundle": "1.1.*",
+        "symfony/symfony":"2.1.*@stable",
+        "doctrine/orm":"2.3.*@stable",
+        "doctrine/dbal":"2.3.*@stable",
+        "doctrine/common":"2.3.*@stable",
+        "doctrine/doctrine-bundle":"1.0.*@stable",
+        "twig/extensions":"1.0.*",
+        "symfony/assetic-bundle":"2.1.*@stable",
+        "symfony/monolog-bundle":"2.1.*@stable",
+        "sensio/distribution-bundle":"2.1.*@stable",
+        "sensio/framework-extra-bundle":"2.1.*@stable",
+        "sensio/generator-bundle":"2.1.*@stable",
+        "jms/security-extra-bundle":"1.2.*@stable",
+        "jms/di-extra-bundle":"1.1.*@stable",
+
+        "symfony/swiftmailer-bundle":"2.1.*@stable",
+        "swiftmailer/swiftmailer":"4.*@stable",
+        "twig/twig":"1.9.*@stable",
+        "monolog/monolog":"1.2.*@stable",
+
         "jms/i18n-routing-bundle": "dev-master",
         "avalanche123/imagine-bundle": "dev-master",
         "doctrine/doctrine-migrations-bundle": "dev-master",
-        "doctrine/doctrine-fixtures-bundle": "dev-master"
+        "doctrine/doctrine-fixtures-bundle": "dev-master",
+        "jordillonch/crud-generator": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
