@@ -27,6 +27,7 @@ class CategoriaPintura
      * @var string $title_ca
      *
      * @ORM\Column(name="title_ca", type="string", length=255)
+     * @Assert\NotEmpty()
      */
     private $title_ca;
 
@@ -34,6 +35,7 @@ class CategoriaPintura
      * @var string $title_es
      *
      * @ORM\Column(name="title_es", type="string", length=255)
+     * @Assert\NotEmpty()
      */
     private $title_es;
 
@@ -41,6 +43,7 @@ class CategoriaPintura
      * @var string $title_en
      *
      * @ORM\Column(name="title_en", type="string", length=255)
+     * @Assert\NotEmpty()
      */
     private $title_en;
 

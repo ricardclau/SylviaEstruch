@@ -1,3 +1,5 @@
+# php app/console trans:extr --enable-extractor=jms_i18n_routing de --output-dir=app/Resources/translations --output-format=yml --bundle=SEstruchWebsiteBundle --ignore-domain=messages
+
 # www.robotstxt.org/
 # www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
 

@@ -27,6 +27,7 @@ class Teatro
      * @var string $title
      *
      * @ORM\Column(name="title", type="string", length=255)
+     * @Assert\NotEmpty()
      */
     private $title;
 
@@ -34,6 +35,7 @@ class Teatro
      * @var string $foto1
      *
      * @ORM\Column(name="foto1", type="string", length=255)
+     * @Assert\Image()
      */
     private $foto1;
 
@@ -41,6 +43,7 @@ class Teatro
      * @var string $foto2
      *
      * @ORM\Column(name="foto2", type="string", length=255)
+     * @Assert\Image()
      */
     private $foto2;
 
@@ -48,6 +51,7 @@ class Teatro
      * @var string $foto3
      *
      * @ORM\Column(name="foto3", type="string", length=255)
+     * @Assert\Image()
      */
     private $foto3;
 
@@ -55,6 +59,7 @@ class Teatro
      * @var string $mini_alignment
      *
      * @ORM\Column(name="mini_alignment", type="string", length=2)
+     * @Assert\NotEmpty()
      */
     private $mini_alignment;
 

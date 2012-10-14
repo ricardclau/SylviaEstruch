@@ -22,16 +22,18 @@ class LoadTeatros extends AbstractFixture implements OrderedFixtureInterface, Co
 
     public function load(ObjectManager $manager)
     {
-        $cp = new CategoriaTeatro();
-        $cp->setTitleCa('Obres de teatre');
-        $cp->setTitleEs('Obras de teatro');
-        $cp->setTitleEn('Theater plays');
+        $cp = (new CategoriaTeatro())
+            ->setTitleCa('Obres de teatre')
+            ->setTitleEs('Obras de teatro')
+            ->setTitleEn('Theater plays');
+
         $manager->persist($cp);
 
-        $cp = new CategoriaTeatro();
-        $cp->setTitleCa('Performances');
-        $cp->setTitleEs('Performances');
-        $cp->setTitleEn('Performances');
+        $cp = (new CategoriaTeatro())
+            ->setTitleCa('Performances')
+            ->setTitleEs('Performances')
+            ->setTitleEn('Performances');
+
         $manager->persist($cp);
 
         $manager->flush();

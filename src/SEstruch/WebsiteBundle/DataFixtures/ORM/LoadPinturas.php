@@ -22,38 +22,47 @@ class LoadPinturas extends AbstractFixture implements OrderedFixtureInterface, C
 
     public function load(ObjectManager $manager)
     {
-        $cp = new CategoriaPintura();
-        $cp->setTitleCa('Realista');
-        $cp->setTitleEs('Realista');
-        $cp->setTitleEn('Realistic');
+        $cp = (new CategoriaPintura())
+            ->setTitleCa('Realista')
+            ->setTitleEs('Realista')
+            ->setTitleEn('Realistic');
+
         $manager->persist($cp);
 
-        $cp = new CategoriaPintura();
-        $cp->setTitleCa('Transició');
-        $cp->setTitleEs('Transición');
-        $cp->setTitleEn('Transition');
+        $cp = (new CategoriaPintura())
+            ->setTitleCa('Transició')
+            ->setTitleEs('Transición')
+            ->setTitleEn('Transition');
+
         $manager->persist($cp);
 
-        $cp = new CategoriaPintura();
-        $cp->setTitleCa('Impressionista');
-        $cp->setTitleEs('Impresionista');
-        $cp->setTitleEn('Impressionist');
+        $cp = (new CategoriaPintura())
+            ->setTitleCa('Impressionista')
+            ->setTitleEs('Impresionista')
+            ->setTitleEn('Impressionist');
+
         $manager->persist($cp);
 
-        $cp = new CategoriaPintura();
-        $cp->setTitleCa('Post-impressionista');
-        $cp->setTitleEs('Post-impresionista');
-        $cp->setTitleEn('Post-impressionist');
+        $cp = (new CategoriaPintura())
+            ->setTitleCa('Post-impressionista')
+            ->setTitleEs('Post-impresionista')
+            ->setTitleEn('Post-impressionist');
+
         $manager->persist($cp);
 
-        $cp = new CategoriaPintura();
-        $cp->setTitleCa('Creació');
-        $cp->setTitleEs('Creación');
-        $cp->setTitleEn('Creation');
+        $cp = (new CategoriaPintura())
+            ->setTitleCa('Creació')
+            ->setTitleEs('Creación')
+            ->setTitleEn('Creation');
 
-        $cp->setTitleCa('Últimes creacions');
-        $cp->setTitleEs('Últimas creaciones');
-        $cp->setTitleEn('Latest creations');
+        $manager->persist($cp);
+
+        $cp = (new CategoriaPintura())
+            ->setTitleCa('Últimes creacions')
+            ->setTitleEs('Últimas creaciones')
+            ->setTitleEn('Latest creations');
+
+        $manager->persist($cp);
 
         $manager->flush();
     }

@@ -9,7 +9,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 /**
  * SEstruch\WebsiteBundle\Entity\Pintura
  *
- * @ORM\Table()
+ * @ORM\Table(name="pinturas")
  * @ORM\Entity(repositoryClass="SEstruch\WebsiteBundle\Repository\PinturaRepository")
  */
 class Pintura
@@ -27,6 +27,7 @@ class Pintura
      * @var string $title
      *
      * @ORM\Column(name="title", type="string", length=255)
+     * @Assert\NotEmpty()
      */
     private $title;
 
@@ -34,6 +35,7 @@ class Pintura
      * @var string $foto1
      *
      * @ORM\Column(name="foto1", type="string", length=255)
+     * @Assert\Image()
      */
     private $foto1;
 
@@ -41,6 +43,7 @@ class Pintura
      * @var string $foto2
      *
      * @ORM\Column(name="foto2", type="string", length=255)
+     * @Assert\Image()
      */
     private $foto2;
 
@@ -48,6 +51,7 @@ class Pintura
      * @var string $foto3
      *
      * @ORM\Column(name="foto3", type="string", length=255)
+     * @Assert\Image()
      */
     private $foto3;
 
@@ -55,6 +59,7 @@ class Pintura
      * @var string $foto4
      *
      * @ORM\Column(name="foto4", type="string", length=255)
+     * @Assert\Image()
      */
     private $foto4;
 
@@ -62,6 +67,7 @@ class Pintura
      * @var string $foto5
      *
      * @ORM\Column(name="foto5", type="string", length=255)
+     * @Assert\Image()
      */
     private $foto5;
 
@@ -69,6 +75,7 @@ class Pintura
      * @var string $foto6
      *
      * @ORM\Column(name="foto6", type="string", length=255)
+     * @Assert\Image()
      */
     private $foto6;
 
@@ -76,6 +83,7 @@ class Pintura
      * @var string $mini_alignment
      *
      * @ORM\Column(name="mini_alignment", type="string", length=2)
+     * @Assert\NotEmpty()
      */
     private $mini_alignment;
 
