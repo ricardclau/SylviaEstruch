@@ -27,7 +27,7 @@ class Pintura
      * @var string $title
      *
      * @ORM\Column(name="title", type="string", length=255)
-     * @Assert\NotEmpty()
+     * @Assert\NotBlank()
      */
     private $title;
 
@@ -83,7 +83,7 @@ class Pintura
      * @var string $mini_alignment
      *
      * @ORM\Column(name="mini_alignment", type="string", length=2)
-     * @Assert\NotEmpty()
+     * @Assert\NotBlank()
      */
     private $mini_alignment;
 
