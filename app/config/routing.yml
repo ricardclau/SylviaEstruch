@@ -1,7 +1,18 @@
+login_check:
+    pattern:   /admin/login_check
+    options:
+      i18n: false
+
+admin_logout:
+    pattern:   /admin/logout
+    options:
+      i18n: false
+
 s_estruch_website:
     resource: "@SEstruchWebsiteBundle/Controller/"
     type:     annotation
     prefix:   /
+
 
 # Internal routing configuration to handle ESI
 #_internal:
