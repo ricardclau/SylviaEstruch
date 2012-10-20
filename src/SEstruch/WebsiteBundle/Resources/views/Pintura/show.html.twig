@@ -1,0 +1,61 @@
+{% extends 'SEstruchWebsiteBundle::adminlayout.html.twig' %}
+
+
+{% block title %}
+{{ parent() }} - Pintura {{ 'views.show.show'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
+{% endblock %}
+
+{% block page %}
+
+<h1>Pintura</h1>
+
+<form class="form-horizontal">
+    <fieldset>        <div class="control-group">
+            <label class="control-label">Id</label>
+            <div class="controls">                <span class="input-xlarge uneditable-input">{{ entity.id }}</span>            </div>
+        </div>        <div class="control-group">
+            <label class="control-label">Title</label>
+            <div class="controls">                <span class="input-xlarge uneditable-input">{{ entity.title }}</span>            </div>
+        </div>        <div class="control-group">
+            <label class="control-label">Foto1</label>
+            <div class="controls">                <span class="input-xlarge uneditable-input">{{ entity.foto1 }}</span>            </div>
+        </div>        <div class="control-group">
+            <label class="control-label">Foto2</label>
+            <div class="controls">                <span class="input-xlarge uneditable-input">{{ entity.foto2 }}</span>            </div>
+        </div>        <div class="control-group">
+            <label class="control-label">Foto3</label>
+            <div class="controls">                <span class="input-xlarge uneditable-input">{{ entity.foto3 }}</span>            </div>
+        </div>        <div class="control-group">
+            <label class="control-label">Foto4</label>
+            <div class="controls">                <span class="input-xlarge uneditable-input">{{ entity.foto4 }}</span>            </div>
+        </div>        <div class="control-group">
+            <label class="control-label">Foto5</label>
+            <div class="controls">                <span class="input-xlarge uneditable-input">{{ entity.foto5 }}</span>            </div>
+        </div>        <div class="control-group">
+            <label class="control-label">Foto6</label>
+            <div class="controls">                <span class="input-xlarge uneditable-input">{{ entity.foto6 }}</span>            </div>
+        </div>        <div class="control-group">
+            <label class="control-label">Mini_alignment</label>
+            <div class="controls">                <span class="input-xlarge uneditable-input">{{ entity.minialignment }}</span>            </div>
+        </div>    </fieldset>
+</form>
+
+<div>
+    <div class="float-left">
+        <a class="btn" href="{{ path('admin_pintura') }}">
+            {{ 'views.recordactions.backtothelist'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
+        </a>
+    </div>
+    <div class="float-left">
+        <a class="btn btn-primary" href="{{ path('admin_pintura_edit', { 'id': entity.id }) }}">
+            {{ 'views.recordactions.edit'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
+        </a>
+    </div>
+    <div class="float-left">
+        <form action="{{ path('admin_pintura_delete', { 'id': entity.id }) }}" method="post">
+            {{ form_widget(delete_form) }}
+            <button class="btn btn-danger" type="submit" onclick="return confirm('{{ 'views.recordactions.confirm'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}');">{{ 'views.recordactions.delete'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

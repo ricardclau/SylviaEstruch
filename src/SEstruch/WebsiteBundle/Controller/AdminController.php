@@ -33,4 +33,13 @@ class AdminController extends Controller
             'error' => $error,
         );
     }
+
+    /**
+     * @Route("/admin/menu", name="admin_menu", options={"i18n"=false})
+     * @Template()
+     */
+    public function menuAction()
+    {
+        return array();
+    }
 }

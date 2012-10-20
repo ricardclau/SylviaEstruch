@@ -2,7 +2,7 @@
 
 
 {% block title %}
-{{ parent() }} - CategoriaPintura {{ 'views.index.list'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
+{{ parent() }} - Pintura {{ 'views.index.list'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
 {% endblock %}
 
 {% block page %}
@@ -10,7 +10,7 @@
 <div class="row">
 
     <div class="span8">
-        <h1>CategoriaPintura {{ 'views.index.list'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}</h1>
+        <h1>Pintura {{ 'views.index.list'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}</h1>
     </div>
     <div class="span2">
         {% if form_errors(filterForm) %}
@@ -32,11 +32,16 @@
     <div class="span12">
         <div id="filters" class="collapse">
 
-            <form class="well" action="{{ path('admin_categoriapintura') }}" method="post" {{ form_enctype(filterForm) }}>
+            <form class="well" action="{{ path('admin_pintura') }}" method="post" {{ form_enctype(filterForm) }}>
                 {{ form_row(filterForm.id) }}
-                {{ form_row(filterForm.title_ca) }}
-                {{ form_row(filterForm.title_es) }}
-                {{ form_row(filterForm.title_en) }}
+                {{ form_row(filterForm.title) }}
+                {{ form_row(filterForm.foto1) }}
+                {{ form_row(filterForm.foto2) }}
+                {{ form_row(filterForm.foto3) }}
+                {{ form_row(filterForm.foto4) }}
+                {{ form_row(filterForm.foto5) }}
+                {{ form_row(filterForm.foto6) }}
+                {{ form_row(filterForm.mini_alignment) }}
                 {{ form_rest(filterForm) }}
 
                 <p>
@@ -53,24 +58,34 @@
     <thead>
         <tr>
             <th>Id</th>
-            <th>Title_ca</th>
-            <th>Title_es</th>
-            <th>Title_en</th>
+            <th>Title</th>
+            <th>Foto1</th>
+            <th>Foto2</th>
+            <th>Foto3</th>
+            <th>Foto4</th>
+            <th>Foto5</th>
+            <th>Foto6</th>
+            <th>Mini_alignment</th>
             <th>{{ 'views.index.actions'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}</th>
         </tr>
     </thead>
     <tbody>
     {% for entity in entities %}
         <tr>
-            <td><a href="{{ path('admin_categoriapintura_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
-            <td>{{ entity.titleca }}</td>
-            <td>{{ entity.titlees }}</td>
-            <td>{{ entity.titleen }}</td>
+            <td><a href="{{ path('admin_pintura_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+            <td>{{ entity.title }}</td>
+            <td>{{ entity.foto1 }}</td>
+            <td>{{ entity.foto2 }}</td>
+            <td>{{ entity.foto3 }}</td>
+            <td>{{ entity.foto4 }}</td>
+            <td>{{ entity.foto5 }}</td>
+            <td>{{ entity.foto6 }}</td>
+            <td>{{ entity.minialignment }}</td>
             <td>
-        <a class="btn btn-mini" href="{{ path('admin_categoriapintura_show', { 'id': entity.id }) }}">
+        <a class="btn btn-mini" href="{{ path('admin_pintura_show', { 'id': entity.id }) }}">
             {{ 'views.actions.show'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
         </a>
-        <a class="btn btn-mini" href="{{ path('admin_categoriapintura_edit', { 'id': entity.id }) }}">
+        <a class="btn btn-mini" href="{{ path('admin_pintura_edit', { 'id': entity.id }) }}">
             {{ 'views.actions.edit'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
         </a>            </td>
         </tr>
@@ -84,8 +99,8 @@
     </div>
 
         <div class="span8">
-    <a class="btn btn-primary likepaginator" href="{{ path('admin_categoriapintura_new') }}">
-            {{ 'views.index.createnew'|trans({}, 'JordiLlonchCrudGeneratorBundle') }} CategoriaPintura
+    <a class="btn btn-primary likepaginator" href="{{ path('admin_pintura_new') }}">
+            {{ 'views.index.createnew'|trans({}, 'JordiLlonchCrudGeneratorBundle') }} Pintura
         </a>
     </div>
     </div>

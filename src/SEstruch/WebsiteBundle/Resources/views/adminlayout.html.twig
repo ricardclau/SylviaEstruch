@@ -1,2 +1,21 @@
 {% extends 'JordiLlonchCrudGeneratorBundle::layout.html.twig' %}
 
+{% block title 'SylviaEstruch.com - ' %}
+{% block menu %}
+    {% set menuItems = [
+    {anchor: 'Pintura', link: path('admin_categoriapintura')},
+    {anchor: 'Teatre', link: path('admin_categoriateatro')},
+    ] %}
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="#">SylviaEstruch.com</a>
+                <ul class="nav">
+                    {% for menuItem in menuItems %}
+                        <li{% if app.request.requesturi == menuItem.link %} class="active"{% endif %}><a href="{{ menuItem.link }}">{{ menuItem.anchor }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

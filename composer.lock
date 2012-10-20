@@ -348,12 +348,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineMigrationsBundle.git",
-                "reference": "b3ec793dc232fb19f025c3ffc9a0757471d78605"
+                "reference": "e494aceebe05200c3f5e7b54c9facf2cf0b2099c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/DoctrineMigrationsBundle/zipball/b3ec793dc232fb19f025c3ffc9a0757471d78605",
-                "reference": "b3ec793dc232fb19f025c3ffc9a0757471d78605",
+                "url": "https://github.com/doctrine/DoctrineMigrationsBundle/zipball/e494aceebe05200c3f5e7b54c9facf2cf0b2099c",
+                "reference": "e494aceebe05200c3f5e7b54c9facf2cf0b2099c",
                 "shasum": ""
             },
             "require": {
@@ -362,7 +362,7 @@
                 "symfony/framework-bundle": ">=2.1.0,<2.3-dev",
                 "doctrine/doctrine-bundle": "1.0.*"
             },
-            "time": "1349789824",
+            "time": "1350561870",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -401,12 +401,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/migrations",
-                "reference": "v1.0-ALPHA1"
+                "reference": "c1d875ce7d092dd1bc7508c3867b5c6b97431e43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/migrations/zipball/v1.0-ALPHA1",
-                "reference": "v1.0-ALPHA1",
+                "url": "https://github.com/doctrine/migrations/zipball/c1d875ce7d092dd1bc7508c3867b5c6b97431e43",
+                "reference": "c1d875ce7d092dd1bc7508c3867b5c6b97431e43",
                 "shasum": ""
             },
             "require": {
@@ -420,7 +420,7 @@
             "suggest": {
                 "symfony/console": "to run the migration from the console"
             },
-            "time": "1349435713",
+            "time": "1350643044",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -718,17 +718,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/JMSI18nRoutingBundle",
-                "reference": "c1be05b5649193f2e09b5fa554940e73eb107891"
+                "reference": "9ac689e9ec8d733f9553d384bbc53ce21a052beb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmittjoh/JMSI18nRoutingBundle/zipball/c1be05b5649193f2e09b5fa554940e73eb107891",
-                "reference": "c1be05b5649193f2e09b5fa554940e73eb107891",
+                "url": "https://github.com/schmittjoh/JMSI18nRoutingBundle/zipball/9ac689e9ec8d733f9553d384bbc53ce21a052beb",
+                "reference": "9ac689e9ec8d733f9553d384bbc53ce21a052beb",
                 "shasum": ""
             },
             "require": {
                 "jms/translation-bundle": ">=1.0,<2.0-dev",
-                "symfony/framework-bundle": ">=2.1,<2.2-dev"
+                "symfony/framework-bundle": ">=2.1,<2.3-dev"
             },
             "require-dev": {
                 "sensio/framework-extra-bundle": "*",
@@ -744,7 +744,7 @@
                 "symfony/class-loader": "*",
                 "symfony/twig-bundle": "*"
             },
-            "time": "1349726216",
+            "time": "1350545204",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -892,18 +892,21 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/schmittjoh/JMSTranslationBundle.git",
-                "reference": "07531a9125bddcb8139e4e56d9945f31d7d30336"
+                "reference": "aa84f39d5207b1c6ce115ef80eb2a0c1a95e4a0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmittjoh/JMSTranslationBundle/zipball/07531a9125bddcb8139e4e56d9945f31d7d30336",
-                "reference": "07531a9125bddcb8139e4e56d9945f31d7d30336",
+                "url": "https://github.com/schmittjoh/JMSTranslationBundle/zipball/aa84f39d5207b1c6ce115ef80eb2a0c1a95e4a0a",
+                "reference": "aa84f39d5207b1c6ce115ef80eb2a0c1a95e4a0a",
                 "shasum": ""
             },
             "require": {
                 "nikic/php-parser": "0.9.1",
                 "symfony/console": "*",
-                "symfony/framework-bundle": ">=2.1,<2.2-dev"
+                "symfony/framework-bundle": ">=2.1,<2.3-dev"
+            },
+            "conflict": {
+                "twig/twig": ">=1.10.2"
             },
             "require-dev": {
                 "symfony/twig-bundle": "*",
@@ -924,7 +927,7 @@
                 "sensio/framework-extra-bundle": "2.*",
                 "jms/di-extra-bundle": "1.*"
             },
-            "time": "1349166701",
+            "time": "1350545179",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -968,12 +971,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jordillonch/CrudGeneratorBundle",
-                "reference": "b58416f2c88aef8472eaddac5f24f9a65c4ec053"
+                "reference": "30a5b4433620ccb76858347a5d63e72e3691d8c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/jordillonch/CrudGeneratorBundle/zipball/b58416f2c88aef8472eaddac5f24f9a65c4ec053",
-                "reference": "b58416f2c88aef8472eaddac5f24f9a65c4ec053",
+                "url": "https://github.com/jordillonch/CrudGeneratorBundle/zipball/30a5b4433620ccb76858347a5d63e72e3691d8c4",
+                "reference": "30a5b4433620ccb76858347a5d63e72e3691d8c4",
                 "shasum": ""
             },
             "require": {
@@ -982,7 +985,7 @@
                 "sensio/generator-bundle": "2.1.x-dev",
                 "symfony/symfony": "2.1.x-dev"
             },
-            "time": "1349766504",
+            "time": "1350756312",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1017,12 +1020,12 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/kriswallsmith/assetic.git",
-                "reference": "e22c5e07e672bb0cf43127e97e9368b53abf4aa8"
+                "reference": "fa85fb99d63ad0a10d832bde584fc3963e0a7918"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/kriswallsmith/assetic/zipball/e22c5e07e672bb0cf43127e97e9368b53abf4aa8",
-                "reference": "e22c5e07e672bb0cf43127e97e9368b53abf4aa8",
+                "url": "https://github.com/kriswallsmith/assetic/zipball/fa85fb99d63ad0a10d832bde584fc3963e0a7918",
+                "reference": "fa85fb99d63ad0a10d832bde584fc3963e0a7918",
                 "shasum": ""
             },
             "require": {
@@ -1043,7 +1046,7 @@
                 "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
                 "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin"
             },
-            "time": "1349004759",
+            "time": "1350597340",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1084,12 +1087,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lexik/LexikFormFilterBundle",
-                "reference": "a7e978adfc355322a1f976604cce202de35a6567"
+                "reference": "0286aa503b2cc47e30df79d6e2c8414fe0acfad4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/lexik/LexikFormFilterBundle/zipball/a7e978adfc355322a1f976604cce202de35a6567",
-                "reference": "a7e978adfc355322a1f976604cce202de35a6567",
+                "url": "https://github.com/lexik/LexikFormFilterBundle/zipball/0286aa503b2cc47e30df79d6e2c8414fe0acfad4",
+                "reference": "0286aa503b2cc47e30df79d6e2c8414fe0acfad4",
                 "shasum": ""
             },
             "require": {
@@ -1098,7 +1101,7 @@
                 "doctrine/orm": "*",
                 "symfony/form": "2.1.*"
             },
-            "time": "1349442298",
+            "time": "1350393422",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {

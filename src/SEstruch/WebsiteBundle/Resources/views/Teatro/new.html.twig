@@ -2,14 +2,14 @@
 
 
 {% block title %}
-{{ parent() }} - CategoriaPintura {{ 'views.new.creation'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
+{{ parent() }} - Teatro {{ 'views.new.creation'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
 {% endblock %}
 
 {% block page %}
 
-<h1>CategoriaPintura {{ 'views.new.creation'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}</h1>
+<h1>Teatro {{ 'views.new.creation'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}</h1>
 
-<form class="well" action="{{ path('admin_categoriapintura_create') }}" method="post" {{ form_enctype(form) }}>
+<form class="well" action="{{ path('teatro_create') }}" method="post" {{ form_enctype(form) }}>
     {{ form_widget(form) }}
     <p>
         <button type="submit" class="btn btn-success">{{ 'views.new.create'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}</button>
@@ -18,7 +18,7 @@
 
 <div>
     <div class="float-left">
-        <a class="btn" href="{{ path('admin_categoriapintura') }}">
+        <a class="btn" href="{{ path('teatro') }}">
             {{ 'views.recordactions.backtothelist'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
         </a>
     </div>
