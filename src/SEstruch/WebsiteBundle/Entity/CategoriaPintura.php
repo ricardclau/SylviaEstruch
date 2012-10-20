@@ -169,4 +169,9 @@ class CategoriaPintura
     {
         return $this->pinturas;
     }
+
+    public function __toString()
+    {
+        return $this->getTitleCa();
+    }
 }

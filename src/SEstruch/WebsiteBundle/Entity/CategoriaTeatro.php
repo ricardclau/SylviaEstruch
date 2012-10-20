@@ -170,4 +170,9 @@ class CategoriaTeatro
     {
         return $this->teatros;
     }
+
+    public function __toString()
+    {
+        return $this->getTitleCa();
+    }
 }
