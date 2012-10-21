@@ -62,7 +62,7 @@ class DefaultController extends Controller
             $message = \Swift_Message::newInstance()
                 ->setSubject('Missatge rebut des de la web www.sylviaestruch.com')
                 ->setFrom(array($contactData['email'] => $contactData['nombre']))
-                ->setTo('ricard.clau@gmail.com')
+                ->setTo($this->container->getParameter('contact.email'))
                 ->setBody($contactData['mensaje'])
             ;
 

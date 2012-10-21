@@ -4,6 +4,7 @@ imports:
 
 parameters:
   locales: [ca, es, en]
+  contact.email: "sylviaestruch@hotmail.com"
 
 framework:
     #esi:             ~

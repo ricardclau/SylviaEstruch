@@ -8,5 +8,8 @@ contact_send: /contacte
 # Desc: /painting
 painting: /pintura
 
+# Desc: /theater
+theater: /teatre
+
 # Desc: /
 homepage: /
