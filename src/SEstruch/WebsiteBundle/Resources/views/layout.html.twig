@@ -8,9 +8,13 @@
     <meta content="{% block keywords %}{{ 'common.meta.keywords' | trans }}{% endblock %}" name="keywords">
     <meta content="7 days" name="revisit-after">
     <title>SylviaEstruch.com{% block title %}{% endblock %}</title>
-    <link href="/css/01-normalize.css" type="text/css" rel="stylesheet">
-    <link href="/css/10-style.css" type="text/css" rel="stylesheet">
-    <link href="/css/30-lightbox.css" type="text/css" rel="stylesheet">
+    {% stylesheets output='css/compressed.css'
+                    '@SEstruchWebsiteBundle/Resources/public/css/01-normalize.css'
+                    '@SEstruchWebsiteBundle/Resources/public/css/10-style.css'
+                    '@SEstruchWebsiteBundle/Resources/public/css/30-lightbox.css'
+    %}
+        <link rel="stylesheet" href="{{ asset_url }}" type="text/css" media="screen" />
+    {% endstylesheets %}
     <link rel="shortcut icon" href="/favicon.ico">
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>

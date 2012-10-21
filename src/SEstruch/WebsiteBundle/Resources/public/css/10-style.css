@@ -26,7 +26,7 @@ header {
 
 #menu li {
     float: left;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 #langs li a, #menu li a {
@@ -36,6 +36,11 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     line-height: 11px;
+    padding: 1px 2px;
+}
+
+#menu li a:hover {
+    background-color: #FFD101;
 }
 
 #langs li a:hover {
