@@ -147,7 +147,10 @@ class PinturaController extends Controller
     public function newAction()
     {
         $entity = new Pintura();
-        $form   = $this->createForm(new PinturaType(), $entity);
+
+        $reflection = new \ReflectionClass($entity);
+
+        $form = $this->createForm(new PinturaType(), $entity);
 
         return array(
             'entity' => $entity,

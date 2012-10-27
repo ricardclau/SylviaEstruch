@@ -11,9 +11,12 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @ORM\Table(name="pinturas")
  * @ORM\Entity(repositoryClass="SEstruch\WebsiteBundle\Repository\PinturaRepository")
+ * @ORM\HasLifecycleCallbacks
  */
 class Pintura
 {
+    use EntityFilesTrait;
+
     /**
      * @var integer $id
      *
@@ -27,7 +30,6 @@ class Pintura
      * @var string $title
      *
      * @ORM\Column(name="title", type="string", length=255, nullable=true)
-     * @Assert\NotBlank()
      */
     private $title;
 
@@ -35,49 +37,175 @@ class Pintura
      * @var string $foto1
      *
      * @ORM\Column(name="foto1", type="string", length=255)
-     * @Assert\Image()
      */
     private $foto1;
+
+    /**
+     * @var string $file1
+     *
+     * @Assert\Image()
+     */
+    private $file1;
 
     /**
      * @var string $foto2
      *
      * @ORM\Column(name="foto2", type="string", length=255)
-     * @Assert\Image()
      */
     private $foto2;
+
+    /**
+     * @var string $file2
+     *
+     * @Assert\Image()
+     */
+    private $file2;
 
     /**
      * @var string $foto3
      *
      * @ORM\Column(name="foto3", type="string", length=255)
-     * @Assert\Image()
      */
     private $foto3;
+
+    /**
+     * @var string $file3
+     *
+     * @Assert\Image()
+     */
+    private $file3;
 
     /**
      * @var string $foto4
      *
      * @ORM\Column(name="foto4", type="string", length=255)
-     * @Assert\Image()
      */
     private $foto4;
+
+    /**
+     * @var string $file4
+     *
+     * @Assert\Image()
+     */
+    private $file4;
 
     /**
      * @var string $foto5
      *
      * @ORM\Column(name="foto5", type="string", length=255)
-     * @Assert\Image()
      */
     private $foto5;
+
+    /**
+     * @var string $file5
+     *
+     * @Assert\Image()
+     */
+    private $file5;
 
     /**
      * @var string $foto6
      *
      * @ORM\Column(name="foto6", type="string", length=255)
-     * @Assert\Image()
      */
     private $foto6;
+
+    /**
+     * @var string $file6
+     *
+     * @Assert\Image()
+     */
+    private $file6;
+
+    public function setFile1($file1)
+    {
+        $this->file1 = $file1;
+    }
+
+    public function getFile1()
+    {
+        return $this->file1;
+    }
+
+    /**
+     * @param string $file2
+     */
+    public function setFile2($file2)
+    {
+        $this->file2 = $file2;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFile2()
+    {
+        return $this->file2;
+    }
+
+    /**
+     * @param string $file3
+     */
+    public function setFile3($file3)
+    {
+        $this->file3 = $file3;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFile3()
+    {
+        return $this->file3;
+    }
+
+    /**
+     * @param string $file4
+     */
+    public function setFile4($file4)
+    {
+        $this->file4 = $file4;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFile4()
+    {
+        return $this->file4;
+    }
+
+    /**
+     * @param string $file5
+     */
+    public function setFile5($file5)
+    {
+        $this->file5 = $file5;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFile5()
+    {
+        return $this->file5;
+    }
+
+    /**
+     * @param string $file6
+     */
+    public function setFile6($file6)
+    {
+        $this->file6 = $file6;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFile6()
+    {
+        return $this->file6;
+    }
 
     /**
      * @var string $mini_alignment

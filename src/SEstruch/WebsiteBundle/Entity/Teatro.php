@@ -11,9 +11,12 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @ORM\Table(name="teatros")
  * @ORM\Entity(repositoryClass="SEstruch\WebsiteBundle\Repository\TeatroRepository")
+ * @ORM\HasLifecycleCallbacks
  */
 class Teatro
 {
+    use EntityFilesTrait;
+
     /**
      * @var integer $id
      *
@@ -35,25 +38,43 @@ class Teatro
      * @var string $foto1
      *
      * @ORM\Column(name="foto1", type="string", length=255)
-     * @Assert\Image()
      */
     private $foto1;
+
+    /**
+     * @var string $file1
+     *
+     * @Assert\Image()
+     */
+    private $file1;
 
     /**
      * @var string $foto2
      *
      * @ORM\Column(name="foto2", type="string", length=255)
-     * @Assert\Image()
      */
     private $foto2;
+
+    /**
+     * @var string $file2
+     *
+     * @Assert\Image()
+     */
+    private $file2;
 
     /**
      * @var string $foto3
      *
      * @ORM\Column(name="foto3", type="string", length=255)
-     * @Assert\Image()
      */
     private $foto3;
+
+    /**
+     * @var string $file3
+     *
+     * @Assert\Image()
+     */
+    private $file3;
 
     /**
      * @var string $mini_alignment
