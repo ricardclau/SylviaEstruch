@@ -42,6 +42,26 @@ class CategoriaTeatroController extends Controller
     }
 
     /**
+     * Lists all CategoriaTeatro entities.
+     *
+     * @Route("/{catId}/obras", requirements={"catId" = "\d+"}, name="admin_obrascategoriateatro")
+     * @Template()
+     */
+    public function obrasAction($catId)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $entity = $em->getRepository('SEstruchWebsiteBundle:CategoriaTeatro')->find($catId);
+        if (!$entity instanceof CategoriaTeatro) {
+            throw $this->createNotFoundException('Categoria Teatro not found');
+        }
+
+        return array(
+            'entity' => $entity,
+        );
+    }
+
+    /**
     * Create filter form and process filter request.
     *
     */

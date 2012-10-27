@@ -32,7 +32,7 @@
     <div class="span12">
         <div id="filters" class="collapse">
 
-            <form class="well" action="{{ path('teatro') }}" method="post" {{ form_enctype(filterForm) }}>
+            <form class="well" action="{{ path('admin_teatro') }}" method="post" {{ form_enctype(filterForm) }}>
                 {{ form_row(filterForm.id) }}
                 {{ form_row(filterForm.title) }}
                 {{ form_row(filterForm.foto1) }}
@@ -66,17 +66,17 @@
     <tbody>
     {% for entity in entities %}
         <tr>
-            <td><a href="{{ path('teatro_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+            <td><a href="{{ path('admin_teatro_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
             <td>{{ entity.title }}</td>
             <td>{{ entity.foto1 }}</td>
             <td>{{ entity.foto2 }}</td>
             <td>{{ entity.foto3 }}</td>
             <td>{{ entity.minialignment }}</td>
             <td>
-        <a class="btn btn-mini" href="{{ path('teatro_show', { 'id': entity.id }) }}">
+        <a class="btn btn-mini" href="{{ path('admin_teatro_show', { 'id': entity.id }) }}">
             {{ 'views.actions.show'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
         </a>
-        <a class="btn btn-mini" href="{{ path('teatro_edit', { 'id': entity.id }) }}">
+        <a class="btn btn-mini" href="{{ path('admin_teatro_edit', { 'id': entity.id }) }}">
             {{ 'views.actions.edit'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
         </a>            </td>
         </tr>
@@ -90,7 +90,7 @@
     </div>
 
         <div class="span8">
-    <a class="btn btn-primary likepaginator" href="{{ path('teatro_new') }}">
+    <a class="btn btn-primary likepaginator" href="{{ path('admin_teatro_new') }}">
             {{ 'views.index.createnew'|trans({}, 'JordiLlonchCrudGeneratorBundle') }} Teatro
         </a>
     </div>

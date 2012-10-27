@@ -5,6 +5,7 @@ namespace SEstruch\WebsiteBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use SEstruch\WebsiteBundle\Entity\EntityHelper;
 
 class TeatroType extends AbstractType
 {
@@ -13,9 +14,11 @@ class TeatroType extends AbstractType
         $builder
             ->add('title')
             ->add('foto1')
+            ->add('mini_alignment', 'choice', array(
+                'choices' =>EntityHelper::getPhotoAlignments()
+            ))
             ->add('foto2')
             ->add('foto3')
-            ->add('mini_alignment')
             ->add('category')
         ;
     }

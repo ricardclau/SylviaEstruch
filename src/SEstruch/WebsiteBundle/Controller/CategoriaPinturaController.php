@@ -42,6 +42,26 @@ class CategoriaPinturaController extends Controller
     }
 
     /**
+     * Lists all CategoriaPintura entities.
+     *
+     * @Route("/{catId}/obras", requirements={"catId" = "\d+"}, name="admin_obrascategoriapintura")
+     * @Template()
+     */
+    public function obrasAction($catId)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $entity = $em->getRepository('SEstruchWebsiteBundle:CategoriaPintura')->find($catId);
+        if (!$entity instanceof CategoriaPintura) {
+            throw $this->createNotFoundException('Categoria Pintura not found');
+        }
+
+        return array(
+            'entity' => $entity,
+        );
+    }
+
+    /**
     * Create filter form and process filter request.
     *
     */

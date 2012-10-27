@@ -26,7 +26,7 @@ class Pintura
     /**
      * @var string $title
      *
-     * @ORM\Column(name="title", type="string", length=255)
+     * @ORM\Column(name="title", type="string", length=255, nullable=true)
      * @Assert\NotBlank()
      */
     private $title;

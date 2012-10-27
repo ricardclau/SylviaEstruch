@@ -33,17 +33,17 @@
 
 <div>
     <div class="float-left">
-        <a class="btn" href="{{ path('teatro') }}">
+        <a class="btn" href="{{ path('admin_teatro') }}">
             {{ 'views.recordactions.backtothelist'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
         </a>
     </div>
     <div class="float-left">
-        <a class="btn btn-primary" href="{{ path('teatro_edit', { 'id': entity.id }) }}">
+        <a class="btn btn-primary" href="{{ path('admin_teatro_edit', { 'id': entity.id }) }}">
             {{ 'views.recordactions.edit'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
         </a>
     </div>
     <div class="float-left">
-        <form action="{{ path('teatro_delete', { 'id': entity.id }) }}" method="post">
+        <form action="{{ path('admin_teatro_delete', { 'id': entity.id }) }}" method="post">
             {{ form_widget(delete_form) }}
             <button class="btn btn-danger" type="submit" onclick="return confirm('{{ 'views.recordactions.confirm'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}');">{{ 'views.recordactions.delete'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}</button>
         </form>

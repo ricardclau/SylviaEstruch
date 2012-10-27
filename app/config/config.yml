@@ -2,10 +2,6 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
 
-parameters:
-  locales: [ca, es, en]
-  contact.email: "sylviaestruch@hotmail.com"
-
 framework:
     #esi:             ~
     translator:      { fallback: %locale% }
@@ -71,4 +67,4 @@ jms_i18n_routing:
 
 twig:
     globals:
-      locales: %locales%
+        locales: %locales%

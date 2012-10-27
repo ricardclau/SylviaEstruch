@@ -24,7 +24,7 @@ class TeatroController extends Controller
     /**
      * Lists all Teatro entities.
      *
-     * @Route("/", name="teatro")
+     * @Route("/", name="admin_teatro")
      * @Template()
      */
     public function indexAction()
@@ -117,7 +117,7 @@ class TeatroController extends Controller
     /**
      * Finds and displays a Teatro entity.
      *
-     * @Route("/{id}/show", name="teatro_show")
+     * @Route("/{id}/show", name="admin_teatro_show")
      * @Template()
      */
     public function showAction($id)
@@ -141,7 +141,7 @@ class TeatroController extends Controller
     /**
      * Displays a form to create a new Teatro entity.
      *
-     * @Route("/new", name="teatro_new")
+     * @Route("/new", name="admin_teatro_new")
      * @Template()
      */
     public function newAction()
@@ -158,7 +158,7 @@ class TeatroController extends Controller
     /**
      * Creates a new Teatro entity.
      *
-     * @Route("/create", name="teatro_create")
+     * @Route("/create", name="admin_teatro_create")
      * @Method("post")
      * @Template("SEstruchWebsiteBundle:Teatro:new.html.twig")
      */
@@ -187,7 +187,7 @@ class TeatroController extends Controller
     /**
      * Displays a form to edit an existing Teatro entity.
      *
-     * @Route("/{id}/edit", name="teatro_edit")
+     * @Route("/{id}/edit", name="admin_teatro_edit")
      * @Template()
      */
     public function editAction($id)
@@ -213,7 +213,7 @@ class TeatroController extends Controller
     /**
      * Edits an existing Teatro entity.
      *
-     * @Route("/{id}/update", name="teatro_update")
+     * @Route("/{id}/update", name="admin_teatro_update")
      * @Method("post")
      * @Template("SEstruchWebsiteBundle:Teatro:edit.html.twig")
      */
@@ -253,7 +253,7 @@ class TeatroController extends Controller
     /**
      * Deletes a Teatro entity.
      *
-     * @Route("/{id}/delete", name="teatro_delete")
+     * @Route("/{id}/delete", name="admin_teatro_delete")
      * @Method("post")
      */
     public function deleteAction($id)

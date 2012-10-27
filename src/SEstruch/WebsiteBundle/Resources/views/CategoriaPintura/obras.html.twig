@@ -1,0 +1,102 @@
+{% extends 'SEstruchWebsiteBundle::adminlayout.html.twig' %}
+
+
+{% block title %}
+    {{ parent() }} - Obras de CategoriaPintura {{ entity.titleca }} - {{ 'views.index.list'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
+{% endblock %}
+
+{% block page %}
+
+    <div class="row">
+
+        <div class="span8">
+            <h1>CategoriaPintura {{ entity.titleca }} - {{ 'views.index.list'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}</h1>
+        </div>
+        {#<div class="span2">#}
+            {#{% if form_errors(filterForm) %}#}
+                {#<div class="alert alert-block alert-error fade in form-errors">#}
+                    {#{{ form_errors(filterForm) }}#}
+                {#</div>#}
+            {#{% endif %}#}
+            {#&nbsp;#}
+        {#</div>#}
+        {#<div class="span2">#}
+            {#<div class="filters-right">#}
+                {#<a class="btn dropdown-toggle" data-toggle="collapse" data-target="#filters">#}
+                    {#{{ 'views.index.filters'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}#}
+                    {#<span class="caret"></span>#}
+                {#</a>#}
+            {#</div>#}
+        {#</div>#}
+
+        {#<div class="span12">#}
+            {#<div id="filters" class="collapse">#}
+
+                {#<form class="well" action="{{ path('admin_categoriapintura') }}" method="post" {{ form_enctype(filterForm) }}>#}
+                    {#{{ form_row(filterForm.id) }}#}
+                    {#{{ form_row(filterForm.title_ca) }}#}
+                    {#{{ form_row(filterForm.title_es) }}#}
+                    {#{{ form_row(filterForm.title_en) }}#}
+                    {#{{ form_rest(filterForm) }}#}
+
+                    {#<p>#}
+                        {#<button type="submit" name="filter_action" value="reset">{{ 'views.index.reset'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}</button>#}
+                        {#<button type="submit" name="filter_action" value="filter">{{ 'views.index.filter'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}</button>#}
+                    {#</p>#}
+                {#</form>#}
+            {#</div>#}
+        {#</div>#}
+
+        <div class="span12">
+
+            <table class="table table-striped table-bordered table-condensed">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Foto1</th>
+                    <th>Foto2</th>
+                    <th>Foto3</th>
+                    <th>Foto4</th>
+                    <th>Foto5</th>
+                    <th>Foto6</th>
+                    <th>{{ 'views.index.actions'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for obra in entity.pinturas %}
+                    <tr>
+                        <td><a href="{{ path('admin_categoriapintura_show', { 'id': obra.id }) }}">{{ obra.id }}</a></td>
+                        <td>{{ obra.title }}</td>
+                        <td>{{ obra.foto1 }}</td>
+                        <td>{{ obra.foto2 }}</td>
+                        <td>{{ obra.foto3 }}</td>
+                        <td>{{ obra.foto4 }}</td>
+                        <td>{{ obra.foto5 }}</td>
+                        <td>{{ obra.foto6 }}</td>
+                        <td>
+                            <a class="btn btn-mini" href="{{ path('admin_categoriapintura_show', { 'id': obra.id }) }}">
+                                {{ 'views.actions.show'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
+                            </a>
+                            <a class="btn btn-mini" href="{{ path('admin_categoriapintura_edit', { 'id': obra.id }) }}">
+                                {{ 'views.actions.edit'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
+                            </a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="span4">
+            {{ pagerHtml|raw }}
+        </div>
+
+        <div class="span8">
+            <a class="btn btn-primary likepaginator" href="{{ path('admin_pintura_new') }}">
+                {{ 'views.index.createnew'|trans({}, 'JordiLlonchCrudGeneratorBundle') }} Pintura
+            </a>
+        </div>
+    </div>
+
+{% endblock %}

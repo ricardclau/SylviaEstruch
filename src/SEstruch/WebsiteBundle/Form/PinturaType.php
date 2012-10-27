@@ -5,6 +5,7 @@ namespace SEstruch\WebsiteBundle\Form;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
+use SEstruch\WebsiteBundle\Entity\EntityHelper;
 
 class PinturaType extends AbstractType
 {
@@ -13,12 +14,14 @@ class PinturaType extends AbstractType
         $builder
             ->add('title')
             ->add('foto1')
+            ->add('mini_alignment', 'choice', array(
+                'choices' =>EntityHelper::getPhotoAlignments()
+            ))
             ->add('foto2')
             ->add('foto3')
             ->add('foto4')
             ->add('foto5')
             ->add('foto6')
-            ->add('mini_alignment')
             ->add('category')
         ;
     }

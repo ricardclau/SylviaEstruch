@@ -1,6 +1,6 @@
 {% extends 'JordiLlonchCrudGeneratorBundle::layout.html.twig' %}
 
-{% block title 'SylviaEstruch.com - ' %}
+{% block title 'SylviaEstruch.com ' %}
 {% block menu %}
     {% set menuItems = [
     {anchor: 'Pintura', link: path('admin_categoriapintura')},
@@ -15,6 +15,7 @@
                         <li{% if app.request.requesturi == menuItem.link %} class="active"{% endif %}><a href="{{ menuItem.link }}">{{ menuItem.anchor }}</a></li>
                     {% endfor %}
                 </ul>
+                <div class="filters-right"><a class="btn btn-danger" href="{{ path('admin_logout') }}">Sortir</a></div>
             </div>
         </div>
     </div>
