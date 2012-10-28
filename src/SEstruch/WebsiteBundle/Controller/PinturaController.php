@@ -148,8 +148,6 @@ class PinturaController extends Controller
     {
         $entity = new Pintura();
 
-        $reflection = new \ReflectionClass($entity);
-
         $form = $this->createForm(new PinturaType(), $entity);
 
         return array(
@@ -238,6 +236,7 @@ class PinturaController extends Controller
         $editForm->bind($request);
 
         if ($editForm->isValid()) {
+            $entity->prepareFiles();
             $em->persist($entity);
             $em->flush();
             $this->get('session')->getFlashBag()->add('success', 'flash.update.success');

@@ -235,6 +235,7 @@ class TeatroController extends Controller
         $editForm->bind($request);
 
         if ($editForm->isValid()) {
+            $entity->prepareFiles();
             $em->persist($entity);
             $em->flush();
             $this->get('session')->getFlashBag()->add('success', 'flash.update.success');

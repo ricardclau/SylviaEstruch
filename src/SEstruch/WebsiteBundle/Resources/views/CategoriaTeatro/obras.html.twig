@@ -63,16 +63,16 @@
                 <tbody>
                 {% for obra in entity.pinturas %}
                     <tr>
-                        <td><a href="{{ path('admin_categoriateatro_show', { 'id': obra.id }) }}">{{ obra.id }}</a></td>
+                        <td><a href="{{ path('admin_teatro_show', { 'id': obra.id }) }}">{{ obra.id }}</a></td>
                         <td>{{ obra.title }}</td>
                         <td>{{ obra.foto1 }}</td>
                         <td>{{ obra.foto2 }}</td>
                         <td>{{ obra.foto3 }}</td>
                         <td>
-                            <a class="btn btn-mini" href="{{ path('admin_categoriateatro_show', { 'id': obra.id }) }}">
+                            <a class="btn btn-mini" href="{{ path('admin_teatro_show', { 'id': obra.id }) }}">
                                 {{ 'views.actions.show'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
                             </a>
-                            <a class="btn btn-mini" href="{{ path('admin_categoriateatro_edit', { 'id': obra.id }) }}">
+                            <a class="btn btn-mini" href="{{ path('admin_teatro_edit', { 'id': obra.id }) }}">
                                 {{ 'views.actions.edit'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
                             </a>
                         </td>

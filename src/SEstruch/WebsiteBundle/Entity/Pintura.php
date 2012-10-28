@@ -5,7 +5,6 @@ namespace SEstruch\WebsiteBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
-
 /**
  * SEstruch\WebsiteBundle\Entity\Pintura
  *
@@ -41,16 +40,9 @@ class Pintura
     private $foto1;
 
     /**
-     * @var string $file1
-     *
-     * @Assert\Image()
-     */
-    private $file1;
-
-    /**
      * @var string $foto2
      *
-     * @ORM\Column(name="foto2", type="string", length=255)
+     * @ORM\Column(name="foto2", type="string", length=255, nullable=true)
      */
     private $foto2;
 
@@ -64,7 +56,7 @@ class Pintura
     /**
      * @var string $foto3
      *
-     * @ORM\Column(name="foto3", type="string", length=255)
+     * @ORM\Column(name="foto3", type="string", length=255, nullable=true)
      */
     private $foto3;
 
@@ -78,7 +70,7 @@ class Pintura
     /**
      * @var string $foto4
      *
-     * @ORM\Column(name="foto4", type="string", length=255)
+     * @ORM\Column(name="foto4", type="string", length=255, nullable=true)
      */
     private $foto4;
 
@@ -92,7 +84,7 @@ class Pintura
     /**
      * @var string $foto5
      *
-     * @ORM\Column(name="foto5", type="string", length=255)
+     * @ORM\Column(name="foto5", type="string", length=255, nullable=true)
      */
     private $foto5;
 
@@ -106,7 +98,7 @@ class Pintura
     /**
      * @var string $foto6
      *
-     * @ORM\Column(name="foto6", type="string", length=255)
+     * @ORM\Column(name="foto6", type="string", length=255, nullable=true)
      */
     private $foto6;
 
@@ -116,16 +108,6 @@ class Pintura
      * @Assert\Image()
      */
     private $file6;
-
-    public function setFile1($file1)
-    {
-        $this->file1 = $file1;
-    }
-
-    public function getFile1()
-    {
-        return $this->file1;
-    }
 
     /**
      * @param string $file2
@@ -436,5 +418,46 @@ class Pintura
     public function getCategory()
     {
         return $this->category;
+    }
+
+    private function getUploadDir()
+    {
+        return $this->getUploadPath() . 'pintura/';
+    }
+
+    private function getEntityFiles()
+    {
+        return array(
+            array(
+                'field_property' => 'file1',
+                'path_property' => 'foto1',
+                'thumbnails' => array(),
+            ),
+            array(
+                'field_property' => 'file2',
+                'path_property' => 'foto2',
+                'thumbnails' => array(),
+            ),
+            array(
+                'field_property' => 'file3',
+                'path_property' => 'foto3',
+                'thumbnails' => array(),
+            ),
+            array(
+                'field_property' => 'file4',
+                'path_property' => 'foto4',
+                'thumbnails' => array(),
+            ),
+            array(
+                'field_property' => 'file5',
+                'path_property' => 'foto5',
+                'thumbnails' => array(),
+            ),
+            array(
+                'field_property' => 'file6',
+                'path_property' => 'foto6',
+                'thumbnails' => array(),
+            ),
+        );
     }
 }

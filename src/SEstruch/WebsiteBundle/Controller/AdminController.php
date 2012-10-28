@@ -28,10 +28,10 @@ class AdminController extends Controller
             $session->remove(SecurityContext::AUTHENTICATION_ERROR);
         }
 
-        return array(
+        return [
             'last_username' => $session->get(SecurityContext::LAST_USERNAME),
             'error' => $error,
-        );
+        ];
     }
 
     /**
@@ -40,6 +40,6 @@ class AdminController extends Controller
      */
     public function menuAction()
     {
-        return array();
+        return [];
     }
 }

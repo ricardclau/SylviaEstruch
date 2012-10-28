@@ -5,7 +5,6 @@ namespace SEstruch\WebsiteBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
-
 /**
  * SEstruch\WebsiteBundle\Entity\Teatro
  *
@@ -42,16 +41,41 @@ class Teatro
     private $foto1;
 
     /**
-     * @var string $file1
-     *
-     * @Assert\Image()
+     * @param string $file2
      */
-    private $file1;
+    public function setFile2($file2)
+    {
+        $this->file2 = $file2;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFile2()
+    {
+        return $this->file2;
+    }
+
+    /**
+     * @param string $file3
+     */
+    public function setFile3($file3)
+    {
+        $this->file3 = $file3;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFile3()
+    {
+        return $this->file3;
+    }
 
     /**
      * @var string $foto2
      *
-     * @ORM\Column(name="foto2", type="string", length=255)
+     * @ORM\Column(name="foto2", type="string", length=255, nullable=true)
      */
     private $foto2;
 
@@ -65,7 +89,7 @@ class Teatro
     /**
      * @var string $foto3
      *
-     * @ORM\Column(name="foto3", type="string", length=255)
+     * @ORM\Column(name="foto3", type="string", length=255, nullable=true)
      */
     private $foto3;
 
@@ -236,5 +260,31 @@ class Teatro
     public function getCategory()
     {
         return $this->category;
+    }
+
+    private function getUploadDir()
+    {
+        return $this->getUploadPath() . 'teatro/';
+    }
+
+    private function getEntityFiles()
+    {
+        return array(
+            array(
+                'field_property' => 'file1',
+                'path_property' => 'foto1',
+                'thumbnails' => array(),
+            ),
+            array(
+                'field_property' => 'file2',
+                'path_property' => 'foto2',
+                'thumbnails' => array(),
+            ),
+            array(
+                'field_property' => 'file3',
+                'path_property' => 'foto3',
+                'thumbnails' => array(),
+            ),
+        );
     }
 }
