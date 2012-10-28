@@ -1,53 +1,6 @@
 {
-    "hash": "4829acf08726077ec3cc542d7ab1d06a",
+    "hash": "a5171103b45cee91b25db83025a23e3d",
     "packages": [
-        {
-            "name": "avalanche123/imagine-bundle",
-            "version": "dev-master",
-            "target-dir": "Avalanche/Bundle/ImagineBundle",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/avalanche123/AvalancheImagineBundle.git",
-                "reference": "99dcd24525fd9cdc379e1eab4257349f181aa8c3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/avalanche123/AvalancheImagineBundle/zipball/99dcd24525fd9cdc379e1eab4257349f181aa8c3",
-                "reference": "99dcd24525fd9cdc379e1eab4257349f181aa8c3",
-                "shasum": ""
-            },
-            "require": {
-                "symfony/framework-bundle": "2.*",
-                "imagine/imagine": "dev-master"
-            },
-            "suggest": {
-                "symfony/twig-bundle": "2.*"
-            },
-            "time": "1349799990",
-            "type": "symfony-bundle",
-            "installation-source": "source",
-            "autoload": {
-                "psr-0": {
-                    "Avalanche\\Bundle\\ImagineBundle": ""
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bulat Shakirzyanov",
-                    "email": "mallluhuct@gmail.com",
-                    "homepage": "http://avalanche123.com"
-                }
-            ],
-            "description": "Image manipulation using Imagine and Twig Filters.",
-            "homepage": "https://github.com/avalanche123/AvalancheImagineBundle",
-            "keywords": [
-                "image manipulation",
-                "imagine"
-            ]
-        },
         {
             "name": "doctrine/common",
             "version": "2.3.0",
@@ -522,7 +475,7 @@
         },
         {
             "name": "imagine/Imagine",
-            "version": "dev-master",
+            "version": "v0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/avalanche123/Imagine",
@@ -540,9 +493,9 @@
             "require-dev": {
                 "sami/sami": "dev-master"
             },
-            "time": "1343522118",
+            "time": "2012-07-28 17:35:18",
             "type": "library",
-            "installation-source": "source",
+            "installation-source": "dist",
             "autoload": {
                 "psr-0": {
                     "Imagine": "lib/"
@@ -973,12 +926,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jordillonch/CrudGeneratorBundle",
-                "reference": "e2cd1265664c0a7a519a075c87e4036a0bfe8586"
+                "reference": "d43e68d17791daa68935f82f18936c8f0a75bc95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/jordillonch/CrudGeneratorBundle/zipball/e2cd1265664c0a7a519a075c87e4036a0bfe8586",
-                "reference": "e2cd1265664c0a7a519a075c87e4036a0bfe8586",
+                "url": "https://github.com/jordillonch/CrudGeneratorBundle/zipball/d43e68d17791daa68935f82f18936c8f0a75bc95",
+                "reference": "d43e68d17791daa68935f82f18936c8f0a75bc95",
                 "shasum": ""
             },
             "require": {
@@ -987,7 +940,7 @@
                 "symfony/symfony": "2.1.*",
                 "sensio/generator-bundle": "2.1.*"
             },
-            "time": "1351111424",
+            "time": "1351113288",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1132,6 +1085,57 @@
                 "bundle",
                 "doctrine",
                 "filter"
+            ]
+        },
+        {
+            "name": "liip/imagine-bundle",
+            "version": "dev-master",
+            "target-dir": "Liip/ImagineBundle",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/liip/LiipImagineBundle.git",
+                "reference": "40f040e16ef9666704985c7b4db5ebe78ee6da31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/liip/LiipImagineBundle/zipball/40f040e16ef9666704985c7b4db5ebe78ee6da31",
+                "reference": "40f040e16ef9666704985c7b4db5ebe78ee6da31",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "imagine/imagine": "<=0.3.0",
+                "symfony/framework-bundle": ">=2.0.14,<2.3-dev"
+            },
+            "require-dev": {
+                "twig/twig": ">=1.0,<2.0-dev",
+                "symfony/yaml": ">=2.0,<2.3-dev"
+            },
+            "suggest": {
+                "twig/twig": ">=1.0,<2.0-dev"
+            },
+            "time": "1351100791",
+            "type": "symfony-bundle",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Liip\\ImagineBundle": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Liip and other contributors",
+                    "homepage": "https://github.com/liip/LiipImagineBundle/contributors"
+                }
+            ],
+            "description": "This Bundle assists in imagine manipulation using the imagine library",
+            "homepage": "http://liip.ch",
+            "keywords": [
+                "image",
+                "imagine"
             ]
         },
         {
@@ -1417,22 +1421,22 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v4.2.1",
+            "version": "v4.2.2",
             "source": {
                 "type": "git",
                 "url": "git://github.com/swiftmailer/swiftmailer.git",
-                "reference": "v4.2.1"
+                "reference": "v4.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/swiftmailer/swiftmailer/zipball/v4.2.1",
-                "reference": "v4.2.1",
+                "url": "https://github.com/swiftmailer/swiftmailer/zipball/v4.2.2",
+                "reference": "v4.2.2",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.4"
             },
-            "time": "2012-07-13 09:46:37",
+            "time": "2012-10-25 01:30:40",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1849,7 +1853,7 @@
         "twig/twig": 0,
         "monolog/monolog": 0,
         "jms/i18n-routing-bundle": 20,
-        "avalanche123/imagine-bundle": 20,
+        "liip/imagine-bundle": 20,
         "doctrine/doctrine-migrations-bundle": 20,
         "doctrine/doctrine-fixtures-bundle": 20,
         "jordillonch/crud-generator": 20
