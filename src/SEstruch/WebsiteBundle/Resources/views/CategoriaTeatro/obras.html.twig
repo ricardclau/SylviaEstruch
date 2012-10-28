@@ -61,11 +61,11 @@
                 </tr>
                 </thead>
                 <tbody>
-                {% for obra in entity.pinturas %}
+                {% for obra in entity.teatros %}
                     <tr>
                         <td><a href="{{ path('admin_teatro_show', { 'id': obra.id }) }}">{{ obra.id }}</a></td>
                         <td>{{ obra.title }}</td>
-                        <td>{{ obra.foto1 }}</td>
+                        <td><img src="{{ asset('uploads/teatro/' ~ obra.foto1) | imagine_filter('admin_thumb') }}"/></td>
                         <td>{{ obra.foto2 }}</td>
                         <td>{{ obra.foto3 }}</td>
                         <td>

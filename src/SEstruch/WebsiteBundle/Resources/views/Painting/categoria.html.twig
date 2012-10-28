@@ -16,7 +16,7 @@
     <li>
         <span class="contenedor">
             {% for i in 1..6 if attribute(obra, 'foto' ~ i) is not empty %}
-            <a class="foto_{{ obra.id }}" href="{{ asset('uploads/pintura/' ~ attribute(obra, 'foto' ~ i)) | imagine_filter('pintura_big') }}">
+            <a class="foto_{{ obra.id }}" {% if not loop.first %} style="display: none"{% endif %}href="{{ asset('uploads/pintura/' ~ attribute(obra, 'foto' ~ i)) | imagine_filter('pintura_big') }}" title="{% if obra.title is not empty %}{{ obra.title }}{% else %}{{ attribute(obra.category, 'title' ~ app.request.locale | title) }}{% endif %}">
                 <img src="{{ asset('uploads/pintura/' ~ attribute(obra, 'foto' ~ i)) | imagine_filter('pintura_thumb') }}"/>
             </a>
             {% endfor %}

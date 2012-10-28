@@ -81,3 +81,9 @@ liip_imagine:
         pintura_big:
             filters:
                 thumbnail: { size: [520, ~], mode: outbound }
+        teatro_thumb:
+            filters:
+                thumbnail: { size: [215, 150], mode: outbound }
+        teatro_big:
+            filters:
+                thumbnail: { size: [520, ~], mode: outbound }

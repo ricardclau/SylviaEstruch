@@ -175,7 +175,7 @@ class TeatroController extends Controller
             $em->flush();
             $this->get('session')->getFlashBag()->add('success', 'flash.create.success');
 
-            return $this->redirect($this->generateUrl('teatro_show', array('id' => $entity->getId())));        } else {
+            return $this->redirect($this->generateUrl('admin_teatro_show', array('id' => $entity->getId())));        } else {
             $this->get('session')->getFlashBag()->add('error', 'flash.create.error');
         }
 
