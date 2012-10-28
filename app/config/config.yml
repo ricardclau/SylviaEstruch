@@ -68,3 +68,10 @@ jms_i18n_routing:
 twig:
     globals:
         locales: %locales%
+
+liip_imagine:
+    cache_prefix: /uploads/cache
+    filter_sets:
+        admin_thumb:
+            filters:
+                thumbnail: { size: [100, 100], mode: outbound }

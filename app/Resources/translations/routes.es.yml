@@ -6,10 +6,12 @@ contact: /contacto
 contact_send: /contacto
 
 # Desc: /painting
-painting: /pintura
+default_painting: /pintura
+painting: '/pintura/{id}/{slug}'
 
 # Desc: /theater
-theater: /teatro
+default_theater: /teatro
+theater: '/teatro/{id}/{slug}'
 
 # Desc: /
 homepage: /

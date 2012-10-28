@@ -68,7 +68,7 @@
                     <tr>
                         <td><a href="{{ path('admin_pintura_show', { 'id': obra.id }) }}">{{ obra.id }}</a></td>
                         <td>{{ obra.title }}</td>
-                        <td>{{ obra.foto1 }}</td>
+                        <td><img src="{{ asset('uploads/pintura/' ~ obra.foto1) | imagine_filter('admin_thumb') }}"/></td>
                         <td>{{ obra.foto2 }}</td>
                         <td>{{ obra.foto3 }}</td>
                         <td>{{ obra.foto4 }}</td>

@@ -8,6 +8,10 @@ admin_logout:
     options:
       i18n: false
 
+_imagine:
+    resource: .
+    type:     imagine
+
 s_estruch_website:
     resource: "@SEstruchWebsiteBundle/Controller/"
     type:     annotation

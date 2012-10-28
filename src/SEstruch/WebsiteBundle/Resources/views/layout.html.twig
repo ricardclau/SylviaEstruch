@@ -41,10 +41,10 @@
     <nav id="menu">
         <ul class="sections clearfix">
             <li><a href="{{ path('biography') }}">{{ 'common.secciones.biografia' | trans }}</a></li>
-            <li><a href="{{ path('painting') }}">{{ 'common.secciones.pintura' | trans }}</a></li>
+            <li><a href="{{ path('default_painting') }}">{{ 'common.secciones.pintura' | trans }}</a></li>
             {#<li><a href="{{ path('restauracion', {'locale' : app.request.locale,  'section' : 'common.secciones.restauracion' | trans | lower }) }}">{{ 'common.secciones.restauracion' | trans }}</a></li>#}
             {#<li><a href="{{ path('disenyo', {'locale' : app.request.locale,  'section' : 'common.secciones.diseño' | trans | lower }) }}">{{ 'common.secciones.diseño' | trans }}</a></li>#}
-            <li><a href="{{ path('theater') }}">{{ 'common.secciones.teatro' | trans }}</a></li>
+            <li><a href="{{ path('default_theater') }}">{{ 'common.secciones.teatro' | trans }}</a></li>
             <li><a href="{{ path('contact') }}">{{ 'common.secciones.contacto' | trans }}</a></li>
         </ul>
         {% block subsections %}

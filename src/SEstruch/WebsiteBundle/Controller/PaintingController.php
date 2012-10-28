@@ -7,19 +7,28 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
+use SEstruch\WebsiteBundle\Entity\CategoriaPintura;
+
 class PaintingController extends Controller
 {
     /**
-     * @Route("/painting", name="painting")
+     * @Route("/painting", name="default_painting")
+     * @Route("/painting/{id}/{slug}", requirements={"id"="\d+"}, name="painting")
      * @Template()
      */
-    public function categoriaAction()
+    public function categoriaAction($id = 6, $slug = null)
     {
         $em = $this->getDoctrine()->getManager();
         $cats = $em->getRepository('SEstruchWebsiteBundle:CategoriaPintura')->findAll();
 
+        $cat = $em->getRepository('SEstruchWebsiteBundle:CategoriaPintura')->find($id);
+        if (!$cat instanceof CategoriaPintura) {
+            throw $this->createNotFoundException('This category does not exist');
+        }
+
         return array(
             'cats' => $cats,
+            'obras' => $cat->getPinturas(),
         );
     }
 }
