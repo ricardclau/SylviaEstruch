@@ -10,5 +10,19 @@
 {% endblock %}
 
 {% block content %}
-
+<section class="clearfix">
+<ul id="obras">
+{% for obra in obras %}
+    <li>
+        <span class="contenedor">
+            {% for i in 1..6 if attribute(obra, 'foto' ~ i) is not empty %}
+            <a class="foto_{{ obra.id }}" href="{{ asset('uploads/pintura/' ~ attribute(obra, 'foto' ~ i)) | imagine_filter('pintura_big') }}">
+                <img src="{{ asset('uploads/pintura/' ~ attribute(obra, 'foto' ~ i)) | imagine_filter('pintura_thumb') }}"/>
+            </a>
+            {% endfor %}
+        </span>
+    </li>
+{% endfor %}
+</ul>
+</section>
 {% endblock %}

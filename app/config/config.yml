@@ -75,3 +75,9 @@ liip_imagine:
         admin_thumb:
             filters:
                 thumbnail: { size: [100, 100], mode: outbound }
+        pintura_thumb:
+            filters:
+                thumbnail: { size: [160, 144], mode: outbound }
+        pintura_big:
+            filters:
+                thumbnail: { size: [520, ~], mode: outbound }

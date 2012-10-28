@@ -85,7 +85,7 @@ section {
 }
 
 .clearfix {
-  zoom: 1;
+    zoom: 1;
 }
 
 .clearfix:after {
@@ -97,7 +97,7 @@ section {
 }
 
 .opacity90 {
-    filter: alpha(opacity=90);
+    filter: alpha(opacity = 90);
     opacity: 0.9;
 }
 
@@ -108,7 +108,7 @@ section.contacto {
 }
 
 #contact_form {
-    float:left;
+    float: left;
     margin: 60px 30px 30px 100px;
     padding: 20px;
     background-color: white;
@@ -116,7 +116,7 @@ section.contacto {
 }
 
 #contact_info {
-    float:left;
+    float: left;
     background-color: white;
     width: 250px;
     margin: 60px 30px 30px;
@@ -160,4 +160,19 @@ section.contacto {
 #frm_contacto input[type=submit] {
     width: auto;
     float: none;
+}
+
+ul#obras {
+    padding: 0;
+}
+#obras li {
+    margin: 0 10px 10px 0;
+    float: left;
+    border: 1px solid #EDEDED;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    box-shadow: 2px 2px 11px #DCDDDE;
+    -moz-box-shadow: 2px 2px 11px #DCDDDE;
+    -webkit-box-shadow: 2px 2px 11px #DCDDDE;
 }
