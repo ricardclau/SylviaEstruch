@@ -17,9 +17,12 @@
     <span class="contenedor">
         {% for i in 1..6 if attribute(obra, 'foto' ~ i) is not empty %}
             <a class="foto_{{ obra.id }}" {% if not loop.first %} style="display: none"{% endif %}href="{{ asset('uploads/teatro/' ~ attribute(obra, 'foto' ~ i)) | imagine_filter('teatro_big') }}" title="{% if obra.title is not empty %}{{ obra.title }}{% else %}{{ attribute(obra.category, 'title' ~ app.request.locale | title) }}{% endif %}">
+                {% if loop.first %}
                 <img src="{{ asset('uploads/teatro/' ~ attribute(obra, 'foto' ~ i)) | imagine_filter('teatro_thumb') }}"/>
+                {% endif %}
             </a>
         {% endfor %}
+        <span class="text_hidden">{% if obra.title is not empty %}{{ obra.title }}{% else %}{{ attribute(obra.category, 'title' ~ app.request.locale | title) }}{% endif %}</span>
     </span>
             </li>
         {% endfor %}

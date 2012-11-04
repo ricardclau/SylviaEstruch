@@ -165,6 +165,7 @@ section.contacto {
 ul#obras {
     padding: 0;
 }
+
 #obras li {
     margin: 0 10px 10px 0;
     float: left;
@@ -175,4 +176,25 @@ ul#obras {
     box-shadow: 2px 2px 11px #DCDDDE;
     -moz-box-shadow: 2px 2px 11px #DCDDDE;
     -webkit-box-shadow: 2px 2px 11px #DCDDDE;
+}
+
+span.contenedor {
+    position: relative;
+    height: 140px;
+    overflow: hidden;
+    float:left;
+}
+
+span.text_hidden {
+    position: absolute;
+    left: 0;
+    top: 140px;
+    padding-left: 10px;
+    height: 30px;
+    padding-top: 10px;
+    filter: alpha(opacity = 80);
+    opacity: 0.8;
+    background-color: white;
+    width: 100%;
+    font-size: 12px;
 }
