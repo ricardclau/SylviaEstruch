@@ -16,3 +16,4 @@ parameters:
 
     locales: [ca, es, en]
     contact.email: "your.email@gmail.com"
+    ga_tracking: "UA-NUMBER-N"

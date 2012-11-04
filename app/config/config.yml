@@ -68,6 +68,7 @@ jms_i18n_routing:
 twig:
     globals:
         locales: %locales%
+        ga_tracking: %ga_tracking%
 
 liip_imagine:
     cache_prefix: /uploads/cache
