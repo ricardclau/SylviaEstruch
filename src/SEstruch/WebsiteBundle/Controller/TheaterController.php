@@ -24,9 +24,12 @@ class TheaterController extends Controller
             throw $this->createNotFoundException('This category does not exist');
         }
 
+        $obras = $cat->getTeatros()->getValues();
+        shuffle($obras);
+
         return array(
             'cats' => $cats,
-            'obras' => $cat->getTeatros(),
+            'obras' => $obras,
         );
     }
 }

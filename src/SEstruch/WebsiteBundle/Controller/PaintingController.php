@@ -26,9 +26,12 @@ class PaintingController extends Controller
             throw $this->createNotFoundException('This category does not exist');
         }
 
+        $obras = $cat->getPinturas()->getValues();
+        shuffle($obras);
+
         return array(
             'cats' => $cats,
-            'obras' => $cat->getPinturas(),
+            'obras' => $obras,
         );
     }
 }
