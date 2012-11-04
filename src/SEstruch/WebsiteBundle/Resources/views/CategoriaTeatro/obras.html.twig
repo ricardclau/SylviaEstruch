@@ -66,8 +66,8 @@
                         <td><a href="{{ path('admin_teatro_show', { 'id': obra.id }) }}">{{ obra.id }}</a></td>
                         <td>{{ obra.title }}</td>
                         <td><img src="{{ asset('uploads/teatro/' ~ obra.foto1) | imagine_filter('admin_thumb') }}"/></td>
-                        <td>{{ obra.foto2 }}</td>
-                        <td>{{ obra.foto3 }}</td>
+                        <td>{% if obra.foto2 is not empty %}<img src="{{ asset('uploads/teatro/' ~ obra.foto2) | imagine_filter('admin_thumb') }}"/>{% endif %}</td>
+                        <td>{% if obra.foto3 is not empty %}<img src="{{ asset('uploads/teatro/' ~ obra.foto3) | imagine_filter('admin_thumb') }}"/>{% endif %}</td>
                         <td>
                             <a class="btn btn-mini" href="{{ path('admin_teatro_show', { 'id': obra.id }) }}">
                                 {{ 'views.actions.show'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
