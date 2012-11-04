@@ -13,3 +13,6 @@ parameters:
 
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    locales: [ca, es, en]
+    contact.email: "your.email@gmail.com"
