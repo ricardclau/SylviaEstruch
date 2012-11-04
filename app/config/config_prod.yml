@@ -17,3 +17,6 @@ monolog:
             type:  stream
             path:  %kernel.logs_dir%/%kernel.environment%.log
             level: debug
+
+liip_imagine:
+    cache_clearer: false
