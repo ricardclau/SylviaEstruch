@@ -72,6 +72,7 @@ twig:
 
 liip_imagine:
     cache_prefix: /uploads/cache
+    cache_clearer: false
     filter_sets:
         admin_thumb:
             filters:
