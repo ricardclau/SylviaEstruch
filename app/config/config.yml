@@ -77,13 +77,13 @@ liip_imagine:
                 thumbnail: { size: [100, 100], mode: outbound }
         pintura_thumb:
             filters:
-                thumbnail: { size: [160, 144], mode: outbound }
+                thumbnail: { size: [166, 144], mode: outbound }
         pintura_big:
             filters:
                 thumbnail: { size: [520, ~], mode: outbound }
         teatro_thumb:
             filters:
-                thumbnail: { size: [215, 150], mode: outbound }
+                thumbnail: { size: [216, 150], mode: outbound }
         teatro_big:
             filters:
                 thumbnail: { size: [520, ~], mode: outbound }
