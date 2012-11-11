@@ -34,9 +34,9 @@
             <form class="well" action="{{ path('admin_text') }}" method="post" {{ form_enctype(filterForm) }}>
                 {{ form_row(filterForm.id) }}
                 {{ form_row(filterForm.name) }}
-                {{ form_row(filterForm.text_ca) | truncate(200) }}
-                {{ form_row(filterForm.text_es) | truncate(200) }}
-                {{ form_row(filterForm.text_en) | truncate(200) }}
+                {{ form_row(filterForm.text_ca) }}
+                {{ form_row(filterForm.text_es) }}
+                {{ form_row(filterForm.text_en) }}
                 {{ form_rest(filterForm) }}
 
                 <p>
@@ -65,9 +65,9 @@
         <tr>
             <td><a href="{{ path('admin_text_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
             <td>{{ entity.name }}</td>
-            <td>{{ entity.textca }}</td>
-            <td>{{ entity.textes }}</td>
-            <td>{{ entity.texten }}</td>
+            <td>{{ entity.textca | truncate(200) }}</td>
+            <td>{{ entity.textes | truncate(200) }}</td>
+            <td>{{ entity.texten | truncate(200) }}</td>
             <td>
         <a class="btn btn-mini" href="{{ path('admin_text_show', { 'id': entity.id }) }}">
             {{ 'views.actions.show'|trans({}, 'JordiLlonchCrudGeneratorBundle') }}
