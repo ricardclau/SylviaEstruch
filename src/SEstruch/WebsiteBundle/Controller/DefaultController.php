@@ -11,6 +11,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Cache;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Validator\Constraints;
 use Symfony\Component\HttpFoundation\Response;
+use SEstruch\WebsiteBundle\Entity\Text;
 
 class DefaultController extends Controller
 {
@@ -20,7 +21,15 @@ class DefaultController extends Controller
      */
     public function homeAction()
     {
-        return array();
+        $em = $this->getDoctrine()->getManager();
+        $text = $em->getRepository('SEstruchWebsiteBundle:Text')->findOneByName('home');
+        if (!$text instanceof Text) {
+            throw $this->createNotFoundException('This text does not exist');
+        }
+
+        return array(
+            'text' => $text
+        );
     }
 
     /**
@@ -86,7 +95,16 @@ class DefaultController extends Controller
      */
     public function biographyAction()
     {
-        return array();
+        $em = $this->getDoctrine()->getManager();
+        $text = $em->getRepository('SEstruchWebsiteBundle:Text')->findOneByName('biografia');
+        if (!$text instanceof Text) {
+            throw $this->createNotFoundException('This text does not exist');
+        }
+
+        return array(
+            'text' => $text
+        );
+
     }
 
     private function validateContactData(array $contactData)

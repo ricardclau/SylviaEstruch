@@ -1,5 +1,5 @@
 {
-    "hash": "a5171103b45cee91b25db83025a23e3d",
+    "hash": "98365e71b1e6e7ba113fbaf3b91202dc",
     "packages": [
         {
             "name": "doctrine/common",
@@ -76,18 +76,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/data-fixtures.git",
-                "reference": "181b71e9a19bcdc93a9bf5c19dc0ef9615656173"
+                "reference": "a95d7839a7794c7c9b22d64e859ee70658d977fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/doctrine/data-fixtures/zipball/181b71e9a19bcdc93a9bf5c19dc0ef9615656173",
-                "reference": "181b71e9a19bcdc93a9bf5c19dc0ef9615656173",
+                "url": "https://github.com/doctrine/data-fixtures/archive/a95d7839a7794c7c9b22d64e859ee70658d977fe.zip",
+                "reference": "a95d7839a7794c7c9b22d64e859ee70658d977fe",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
-            "time": "1350901469",
+            "time": "1351735543",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -847,12 +847,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/schmittjoh/JMSTranslationBundle.git",
-                "reference": "aa84f39d5207b1c6ce115ef80eb2a0c1a95e4a0a"
+                "reference": "e47bd87d676007d5c75bd3e582a1274d4ecfb0a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/schmittjoh/JMSTranslationBundle/zipball/aa84f39d5207b1c6ce115ef80eb2a0c1a95e4a0a",
-                "reference": "aa84f39d5207b1c6ce115ef80eb2a0c1a95e4a0a",
+                "url": "https://github.com/schmittjoh/JMSTranslationBundle/archive/e47bd87d676007d5c75bd3e582a1274d4ecfb0a0.zip",
+                "reference": "e47bd87d676007d5c75bd3e582a1274d4ecfb0a0",
                 "shasum": ""
             },
             "require": {
@@ -861,7 +861,7 @@
                 "symfony/framework-bundle": ">=2.1,<2.3-dev"
             },
             "conflict": {
-                "twig/twig": ">=1.10.2"
+                "twig/twig": "1.10.2"
             },
             "require-dev": {
                 "symfony/twig-bundle": "*",
@@ -882,7 +882,7 @@
                 "sensio/framework-extra-bundle": "2.*",
                 "jms/di-extra-bundle": "1.*"
             },
-            "time": "1350545179",
+            "time": "1352243342",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -926,12 +926,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jordillonch/CrudGeneratorBundle",
-                "reference": "d43e68d17791daa68935f82f18936c8f0a75bc95"
+                "reference": "1e14d5fcf76a2caffc39232cd8ad1fd671396eff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/jordillonch/CrudGeneratorBundle/zipball/d43e68d17791daa68935f82f18936c8f0a75bc95",
-                "reference": "d43e68d17791daa68935f82f18936c8f0a75bc95",
+                "url": "https://github.com/jordillonch/CrudGeneratorBundle/archive/1e14d5fcf76a2caffc39232cd8ad1fd671396eff.zip",
+                "reference": "1e14d5fcf76a2caffc39232cd8ad1fd671396eff",
                 "shasum": ""
             },
             "require": {
@@ -940,7 +940,7 @@
                 "symfony/symfony": "2.1.*",
                 "sensio/generator-bundle": "2.1.*"
             },
-            "time": "1351113288",
+            "time": "1352053106",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -975,12 +975,12 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/kriswallsmith/assetic.git",
-                "reference": "a1b6fa1f7bb27c203b6c3cf7d0dd0184f8dffcdc"
+                "reference": "d6203098559cf9fc90e2890c10533d0adad33bd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/kriswallsmith/assetic/zipball/a1b6fa1f7bb27c203b6c3cf7d0dd0184f8dffcdc",
-                "reference": "a1b6fa1f7bb27c203b6c3cf7d0dd0184f8dffcdc",
+                "url": "https://github.com/kriswallsmith/assetic/archive/d6203098559cf9fc90e2890c10533d0adad33bd0.zip",
+                "reference": "d6203098559cf9fc90e2890c10533d0adad33bd0",
                 "shasum": ""
             },
             "require": {
@@ -1001,7 +1001,7 @@
                 "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
                 "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin"
             },
-            "time": "1351079542",
+            "time": "1352285252",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1094,12 +1094,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/liip/LiipImagineBundle.git",
-                "reference": "40f040e16ef9666704985c7b4db5ebe78ee6da31"
+                "reference": "be7a2a694a1088167758e9b7954f9cdd5d710b9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/liip/LiipImagineBundle/zipball/40f040e16ef9666704985c7b4db5ebe78ee6da31",
-                "reference": "40f040e16ef9666704985c7b4db5ebe78ee6da31",
+                "url": "https://github.com/liip/LiipImagineBundle/archive/be7a2a694a1088167758e9b7954f9cdd5d710b9b.zip",
+                "reference": "be7a2a694a1088167758e9b7954f9cdd5d710b9b",
                 "shasum": ""
             },
             "require": {
@@ -1114,7 +1114,7 @@
             "suggest": {
                 "twig/twig": ">=1.0,<2.0-dev"
             },
-            "time": "1351100791",
+            "time": "1351613508",
             "type": "symfony-bundle",
             "installation-source": "source",
             "autoload": {
@@ -1281,17 +1281,17 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v2.1.1",
+            "version": "v2.1.3",
             "target-dir": "Sensio/Bundle/DistributionBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensio/SensioDistributionBundle",
-                "reference": "v2.1.1"
+                "reference": "v2.1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sensio/SensioDistributionBundle/zipball/v2.1.1",
-                "reference": "v2.1.1",
+                "url": "https://github.com/sensio/SensioDistributionBundle/zipball/v2.1.3",
+                "reference": "v2.1.3",
                 "shasum": ""
             },
             "require": {
@@ -1327,24 +1327,24 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v2.1.0",
+            "version": "v2.1.3",
             "target-dir": "Sensio/Bundle/FrameworkExtraBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensio/SensioFrameworkExtraBundle",
-                "reference": "v2.1.0"
+                "reference": "v2.1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sensio/SensioFrameworkExtraBundle/zipball/v2.1.0",
-                "reference": "v2.1.0",
+                "url": "https://github.com/sensio/SensioFrameworkExtraBundle/zipball/v2.1.3",
+                "reference": "v2.1.3",
                 "shasum": ""
             },
             "require": {
                 "symfony/framework-bundle": "2.1.*",
                 "doctrine/common": ">=2.1,<2.4-dev"
             },
-            "time": "2012-08-29 03:02:19",
+            "time": "2012-10-16 21:38:27",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1374,28 +1374,29 @@
         },
         {
             "name": "sensio/generator-bundle",
-            "version": "v2.1.0",
+            "version": "v2.1.3",
             "target-dir": "Sensio/Bundle/GeneratorBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensio/SensioGeneratorBundle",
-                "reference": "v2.1.0-RC2"
+                "reference": "v2.1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/sensio/SensioGeneratorBundle/zipball/v2.1.0-RC2",
-                "reference": "v2.1.0-RC2",
+                "url": "https://github.com/sensio/SensioGeneratorBundle/zipball/v2.1.3",
+                "reference": "v2.1.3",
                 "shasum": ""
             },
             "require": {
-                "symfony/framework-bundle": "2.1.*"
+                "symfony/framework-bundle": "2.1.*",
+                "symfony/console": "2.1.*"
             },
             "require-dev": {
                 "symfony/doctrine-bridge": "2.1.*",
                 "doctrine/orm": ">=2.1,<2.4-dev",
                 "twig/twig": ">=1.8,<2.0-dev"
             },
-            "time": "2012-08-28 00:16:11",
+            "time": "2012-09-18 22:03:01",
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
@@ -1418,6 +1419,59 @@
                 }
             ],
             "description": "This bundle generates code for you"
+        },
+        {
+            "name": "stfalcon/tinymce-bundle",
+            "version": "dev-master",
+            "target-dir": "Stfalcon/Bundle/TinymceBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stfalcon/TinymceBundle",
+                "reference": "567a13f96426f104d449af174091c82fd0ffe307"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/stfalcon/TinymceBundle/archive/567a13f96426f104d449af174091c82fd0ffe307.zip",
+                "reference": "567a13f96426f104d449af174091c82fd0ffe307",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/symfony": ">=2.1"
+            },
+            "time": "1352549058",
+            "type": "symfony-bundle",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Stfalcon\\Bundle\\TinymceBundle": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stepan Tanasiychuk",
+                    "email": "ceo@stfalcon.com",
+                    "homepage": "http://blog.stfalcon.com"
+                },
+                {
+                    "name": "Igor Negrutsa",
+                    "email": "progi2007@gmail.com",
+                    "homepage": "http://igor-negrutsa.info"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://github.com/stfalcon/TinymceBundle/contributors"
+                }
+            ],
+            "description": "This Bundle integrates TinyMCE WYSIWYG editor into a Symfony2 project.",
+            "keywords": [
+                "wysiwyg",
+                "tinymce",
+                "editor"
+            ]
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1642,16 +1696,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.1.2",
+            "version": "v2.1.3",
             "source": {
                 "type": "git",
                 "url": "git://github.com/symfony/symfony.git",
-                "reference": "v2.1.2"
+                "reference": "v2.1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/symfony/symfony/zipball/v2.1.2",
-                "reference": "v2.1.2",
+                "url": "https://github.com/symfony/symfony/zipball/v2.1.3",
+                "reference": "v2.1.3",
                 "shasum": ""
             },
             "require": {
@@ -1698,9 +1752,9 @@
                 "doctrine/orm": ">=2.2.3,<2.4-dev",
                 "doctrine/data-fixtures": "1.0.*",
                 "propel/propel1": "dev-master",
-                "monolog/monolog": "dev-master"
+                "monolog/monolog": "1.*"
             },
-            "time": "2012-09-20 00:13:00",
+            "time": "2012-10-30 01:14:14",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -1856,6 +1910,7 @@
         "liip/imagine-bundle": 20,
         "doctrine/doctrine-migrations-bundle": 20,
         "doctrine/doctrine-fixtures-bundle": 20,
-        "jordillonch/crud-generator": 20
+        "jordillonch/crud-generator": 20,
+        "stfalcon/tinymce-bundle": 20
     }
 }

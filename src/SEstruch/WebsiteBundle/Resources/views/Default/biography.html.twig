@@ -2,6 +2,8 @@
 
 {% block content %}
     <section class="biography">
-
+        <article id="biography" class="opacity90">
+        {{ attribute(text, 'text' ~ app.request.locale) }}
+        </article>
     </section>
 {% endblock %}

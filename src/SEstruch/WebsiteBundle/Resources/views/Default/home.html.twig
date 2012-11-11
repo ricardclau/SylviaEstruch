@@ -1,7 +1,9 @@
 {% extends 'SEstruchWebsiteBundle::layout.html.twig' %}
 
 {% block content %}
-<section>
-    <img src="/images/cuadro.jpg">
+<section class="biography">
+    <article id="home" class="opacity90">
+    {{ attribute(text, 'text' ~ app.request.locale) }}
+    </article>
 </section>
 {% endblock %}
