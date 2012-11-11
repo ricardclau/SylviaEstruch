@@ -3,7 +3,7 @@
 {% block content %}
 <section class="biography">
     <article id="home" class="opacity90">
-    {{ attribute(text, 'text' ~ app.request.locale) }}
+    {{ attribute(text, 'text' ~ app.request.locale) | raw  }}
     </article>
 </section>
 {% endblock %}
