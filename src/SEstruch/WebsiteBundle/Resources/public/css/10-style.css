@@ -101,8 +101,14 @@ section {
     opacity: 0.8;
 }
 
-section.biography {
+section.home {
     background-image: url('/images/montaje.jpg');
+    width: 990px;
+    height: 500px;
+}
+
+section.biography {
+    background-image: url('/images/montaje2.jpg');
     width: 990px;
     height: 500px;
 }
