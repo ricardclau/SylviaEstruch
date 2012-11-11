@@ -34,9 +34,9 @@
             <form class="well" action="{{ path('admin_text') }}" method="post" {{ form_enctype(filterForm) }}>
                 {{ form_row(filterForm.id) }}
                 {{ form_row(filterForm.name) }}
-                {{ form_row(filterForm.text_ca) }}
-                {{ form_row(filterForm.text_es) }}
-                {{ form_row(filterForm.text_en) }}
+                {{ form_row(filterForm.text_ca) | truncate(200) }}
+                {{ form_row(filterForm.text_es) | truncate(200) }}
+                {{ form_row(filterForm.text_en) | truncate(200) }}
                 {{ form_rest(filterForm) }}
 
                 <p>

@@ -65,6 +65,12 @@ jms_i18n_routing:
     locales: %locales%
     strategy: prefix
 
+services:
+   twig.extension.text:
+       class: Twig_Extensions_Extension_Text
+       tags:
+           - { name: twig.extension }
+
 twig:
     globals:
         locales: %locales%
