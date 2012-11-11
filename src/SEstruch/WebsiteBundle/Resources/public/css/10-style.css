@@ -101,6 +101,12 @@ section {
     opacity: 0.9;
 }
 
+section.biography {
+    background-image: url('/images/montaje.jpg');
+    width: 990px;
+    height: 500px;
+}
+
 section.contacto {
     background-image: url('/images/cuadro.jpg');
     width: 990px;
