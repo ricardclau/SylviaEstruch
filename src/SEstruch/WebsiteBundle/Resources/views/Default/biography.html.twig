@@ -1,5 +1,9 @@
 {% extends 'SEstruchWebsiteBundle::layout.html.twig' %}
 
+{% block title -%}
+    {{ parent() }} - {{ 'common.secciones.biografia' | trans }}
+{%- endblock %}
+
 {% block content %}
     <section class="biography">
         <article id="biography" class="opacity90">

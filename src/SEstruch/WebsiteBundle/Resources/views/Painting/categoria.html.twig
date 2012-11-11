@@ -1,5 +1,9 @@
 {% extends 'SEstruchWebsiteBundle::layout.html.twig' %}
 
+{% block title -%}
+    {{ parent() }} - {{ 'common.secciones.pintura' | trans }} - {{ attribute(obras[0].category, 'title' ~ app.request.locale) }}
+{%- endblock %}
+
 {% block subsections %}
     {{ app.request.get('locale') }}
 <ul class="subsections clearfix">

@@ -1,4 +1,9 @@
 {% extends 'SEstruchWebsiteBundle::layout.html.twig' %}
+
+{% block title -%}
+    {{ parent() }} - {{ 'common.secciones.contacto' | trans }}
+{%- endblock %}
+
 {% block content %}
 <section class="contacto">
     <article id="contact_form" class="opacity90">
