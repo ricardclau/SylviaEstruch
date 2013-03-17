@@ -24,9 +24,10 @@ assetic:
 
 services:
    twig.extension.debug:
-       class: Twig_Extensions_Extension_Debug
+       class: Twig_Extension_Debug
        tags:
            - { name: twig.extension }
 
 swiftmailer:
     delivery_address: ricard_clau@gmail.com
+
