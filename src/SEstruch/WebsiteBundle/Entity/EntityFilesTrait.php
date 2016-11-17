@@ -107,7 +107,7 @@ trait EntityFilesTrait
     }
 
     /**
-     * @Assert\True(message="Foto1 needs to be uploaded")
+     * @Assert\IsTrue(message="Foto1 needs to be uploaded")
      */
     public function isPhoto1Uploaded()
     {
