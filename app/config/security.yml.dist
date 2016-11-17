@@ -1,9 +1,9 @@
-jms_security_extra:
-    secure_all_services: false
-    expressions: true
-
 security:
     firewalls:
+        dev:
+            pattern:  ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
         secured_area:
             pattern: ^/admin
             anonymous: ~
