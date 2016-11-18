@@ -26,6 +26,10 @@ framework:
 twig:
     debug:            %kernel.debug%
     strict_variables: %kernel.debug%
+    globals:
+        locales: %locales%
+        ga_tracking: '%ga_tracking%'
+
 
 # Assetic Configuration
 assetic:
@@ -72,11 +76,6 @@ services:
        class: Twig_Extensions_Extension_Text
        tags:
            - { name: twig.extension }
-
-twig:
-    globals:
-        locales: %locales%
-        ga_tracking: %ga_tracking%
 
 stfalcon_tinymce:
     include_jquery: true
