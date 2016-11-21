@@ -17,7 +17,7 @@ use SEstruch\WebsiteBundle\Form\TextFilterType;
 /**
  * Text controller.
  *
- * @Route("/admin/text")
+ * @Route("/admin/text", options={"i18n"=false})
  */
 class TextController extends Controller
 {
