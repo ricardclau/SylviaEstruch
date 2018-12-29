@@ -13,7 +13,7 @@ class PaintingController extends Controller
 {
     /**
      * @Route("/painting/", name="default_painting")
-     * @Route("/painting/{slug}-{id}/", requirements={"slug"="([a-z]\-)+", "id"="\d+"}, name="painting")
+     * @Route("/painting/{slug}-{id}/", requirements={"slug"="[a-z\-]+", "id"="\d+"}, name="painting")
      * @Template()
      */
     public function categoriaAction($id = 6, $slug = null)
