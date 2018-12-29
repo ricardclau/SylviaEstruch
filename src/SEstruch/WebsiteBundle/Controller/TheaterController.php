@@ -12,7 +12,7 @@ class TheaterController extends Controller
 {
     /**
      * @Route("/theater/", name="default_theater")
-     * @Route("/theater/{slug}-{id}/", requirements={"id"="\d+"}, name="theater")
+     * @Route("/theater/{slug}-{id}/", requirements={"slug"="[a-z\-]+", "id"="\d+"}, name="theater")
      * @Template()
      */
     public function categoriaAction($id = 2, $slug = '')
