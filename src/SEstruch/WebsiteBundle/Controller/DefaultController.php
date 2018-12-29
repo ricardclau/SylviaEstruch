@@ -33,7 +33,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/contact", name="contact")
+     * @Route("/contact/", name="contact")
      * @Template()
      * @Method("GET")
      */
@@ -43,7 +43,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/frasesjs", name="frasesjs", defaults={"_format"="js"})
+     * @Route("/frases.js", name="frasesjs", defaults={"_format"="js"})
      * @Template()
      * @Method("GET")
      * @Cache(smaxage="600", maxage="600")
@@ -54,7 +54,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/contact", name="contact_send", defaults={"_format"="json"})
+     * @Route("/contact/", name="contact_send", defaults={"_format"="json"})
      * @Method("POST")
      */
     public function contactSendAction(Request $request)
@@ -89,7 +89,7 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/biography", name="biography")
+     * @Route("/biography/", name="biography")
      * @Template()
      * @Method("GET")
      */

@@ -12,8 +12,8 @@ use SEstruch\WebsiteBundle\Entity\CategoriaPintura;
 class PaintingController extends Controller
 {
     /**
-     * @Route("/painting", name="default_painting")
-     * @Route("/painting/{id}/{slug}", requirements={"id"="\d+"}, name="painting")
+     * @Route("/painting/", name="default_painting")
+     * @Route("/painting/{slug}-{id}/", requirements={"id"="\d+"}, name="painting")
      * @Template()
      */
     public function categoriaAction($id = 6, $slug = null)

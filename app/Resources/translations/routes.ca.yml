@@ -1,17 +1,17 @@
 # Desc: /biography
-biography: /biografia   # FIXME
+biography: /biografia/
 
 # Desc: /contact
-contact: /contacte
-contact_send: /contacte
+contact: /contacte/
+contact_send: /contacte/
 
 # Desc: /painting
-default_painting: /pintura
-painting: '/pintura/{id}/{slug}'
+default_painting: /pintura/
+painting: '/pintura/{slug}-{id}/'
 
 # Desc: /theater
-default_theater: /teatre
-theater: '/teatre/{id}/{slug}'
+default_theater: /teatre/
+theater: '/teatre/{slug}-{id}/'
 
 # Desc: /
 homepage: /

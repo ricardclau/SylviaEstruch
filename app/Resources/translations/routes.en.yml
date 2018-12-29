@@ -1,17 +1,17 @@
 # Desc: /biography
-biography: /biography
+biography: /biography/
 
 # Desc: /contact
-contact: /contact
-contact_send: /contact
+contact: /contact/
+contact_send: /contact/
 
 # Desc: /painting
-default_painting: /painting
-painting: '/painting/{id}/{slug}'
+default_painting: /painting/
+painting: '/painting/{slug}-{id}/'
 
 # Desc: /theater
-default_theater: /theater
-theater: '/theater/{id}/{slug}'
+default_theater: /theater/
+theater: '/theater/{slug}-{id}/'
 
 # Desc: /
 homepage: /
